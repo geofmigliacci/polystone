@@ -1,0 +1,17 @@
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\obj\Debug\net5.0\Polystone.Services.csprojAssemblyReference.cache
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\obj\Debug\net5.0\Polystone.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\obj\Debug\net5.0\Polystone.Services.AssemblyInfoInputs.cache
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\obj\Debug\net5.0\Polystone.Services.AssemblyInfo.cs
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\obj\Debug\net5.0\Polystone.Services.csproj.CoreCompileInputs.cache
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\bin\Debug\net5.0\Polystone.Services.deps.json
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\bin\Debug\net5.0\Polystone.Services.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\bin\Debug\net5.0\ref\Polystone.Services.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\bin\Debug\net5.0\Polystone.Services.pdb
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\bin\Debug\net5.0\Polystone.Business.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\bin\Debug\net5.0\Polystone.Business.pdb
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\obj\Debug\net5.0\Polystone.Services.csproj.CopyComplete
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\obj\Debug\net5.0\Polystone.Services.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\obj\Debug\net5.0\ref\Polystone.Services.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\obj\Debug\net5.0\Polystone.Services.pdb
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\bin\Debug\net5.0\Polystone.Services.Interfaces.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Services\bin\Debug\net5.0\Polystone.Services.Interfaces.pdb

@@ -1,0 +1,3 @@
+[submodule "Polystone.Business/protos"]
+	path = Polystone.Business/protos
+	url = https://github.com/Furtif/POGOProtos/

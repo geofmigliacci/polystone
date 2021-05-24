@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <AssemblyName>Polystone</AssemblyName>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="App.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.DryIoc" Version="8.0.0.1909" />
+    <PackageReference Include="Syncfusion.SfNavigationDrawer.WPF" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Themes.MaterialDark.WPF" Version="19.1.0.64" />
+      <PackageReference Include="Syncfusion.SfGrid.WPF" Version="19.1.0.64" />
+      <PackageReference Include="Syncfusion.Tools.WPF" Version="19.1.0.64" />
+      <PackageReference Include="syncfusion.ui.wpf.net" Version="19.1.0.64" />
+</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modules\Polystone.Modules.Home\Polystone.Modules.Home.csproj" />
+    <ProjectReference Include="..\Modules\Polystone.Modules.Setting\Polystone.Modules.Setting.csproj" />
+    <ProjectReference Include="..\Polystone.Core\Polystone.Core.csproj" />
+    <ProjectReference Include="..\Polystone.Services.Interfaces\Polystone.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Polystone.Services\Polystone.Services.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="App.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

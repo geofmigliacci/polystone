@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Polystone.Business\Polystone.Business.csproj" />
+    <ProjectReference Include="..\Polystone.Services.Interfaces\Polystone.Services.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
