@@ -1,0 +1,12 @@
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\bin\Debug\net5.0-windows\Polystone.Core.deps.json
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\bin\Debug\net5.0-windows\Polystone.Core.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\bin\Debug\net5.0-windows\ref\Polystone.Core.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\bin\Debug\net5.0-windows\Polystone.Core.pdb
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\obj\Debug\net5.0-windows\Polystone.Core.csprojAssemblyReference.cache
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\obj\Debug\net5.0-windows\Polystone.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\obj\Debug\net5.0-windows\Polystone.Core.AssemblyInfoInputs.cache
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\obj\Debug\net5.0-windows\Polystone.Core.AssemblyInfo.cs
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\obj\Debug\net5.0-windows\Polystone.Core.csproj.CoreCompileInputs.cache
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\obj\Debug\net5.0-windows\Polystone.Core.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\obj\Debug\net5.0-windows\ref\Polystone.Core.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Core\obj\Debug\net5.0-windows\Polystone.Core.pdb

@@ -1,0 +1,15 @@
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\bin\Debug\net5.0\Polystone.Business.deps.json
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\bin\Debug\net5.0\Polystone.Business.runtimeconfig.json
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\bin\Debug\net5.0\Polystone.Business.runtimeconfig.dev.json
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\bin\Debug\net5.0\Polystone.Business.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\bin\Debug\net5.0\ref\Polystone.Business.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\bin\Debug\net5.0\Polystone.Business.pdb
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\obj\Debug\net5.0\Polystone.Business.csprojAssemblyReference.cache
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\obj\Debug\net5.0\Polystone.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\obj\Debug\net5.0\Polystone.Business.AssemblyInfoInputs.cache
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\obj\Debug\net5.0\Polystone.Business.AssemblyInfo.cs
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\obj\Debug\net5.0\Polystone.Business.csproj.CoreCompileInputs.cache
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\obj\Debug\net5.0\Polystone.Business.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\obj\Debug\net5.0\ref\Polystone.Business.dll
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\obj\Debug\net5.0\Polystone.Business.pdb
+C:\Users\Geoffrey MIGLIACCI\source\repos\Polystone\Polystone.Business\obj\Debug\net5.0\Polystone.Business.genruntimeconfig.cache
