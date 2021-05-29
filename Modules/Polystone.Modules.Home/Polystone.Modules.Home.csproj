@@ -4,8 +4,13 @@
     <UseWPF>true</UseWPF>
     <AssemblyName>Polystone.Modules.Home</AssemblyName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Prism.Wpf" Version="8.0.0.1909" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="19.1.0.65" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Polystone.Core\Polystone.Core.csproj" />

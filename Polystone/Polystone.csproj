@@ -10,22 +10,28 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <Optimize>false</Optimize>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
   <ItemGroup>
     <None Remove="App.png" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Prism.DryIoc" Version="8.0.0.1909" />
-    <PackageReference Include="Syncfusion.SfNavigationDrawer.WPF" Version="19.1.0.64" />
-    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="19.1.0.64" />
-    <PackageReference Include="Syncfusion.Shared.WPF" Version="19.1.0.64" />
-    <PackageReference Include="Syncfusion.Themes.MaterialDark.WPF" Version="19.1.0.64" />
-      <PackageReference Include="Syncfusion.SfGrid.WPF" Version="19.1.0.64" />
-      <PackageReference Include="Syncfusion.Tools.WPF" Version="19.1.0.64" />
-      <PackageReference Include="syncfusion.ui.wpf.net" Version="19.1.0.64" />
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+    <PackageReference Include="Syncfusion.SfNavigationDrawer.WPF" Version="19.1.0.65" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="19.1.0.65" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="19.1.0.65" />
+      <PackageReference Include="Syncfusion.SfGrid.WPF" Version="19.1.0.65" />
+      <PackageReference Include="Syncfusion.Themes.Office2019Black.WPF" Version="19.1.0.65" />
+      <PackageReference Include="Syncfusion.Tools.WPF" Version="19.1.0.65" />
 </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Modules\Polystone.Modules.Account\Polystone.Modules.Account.csproj" />
+    <ProjectReference Include="..\Modules\Polystone.Modules.Candy\Polystone.Modules.Candy.csproj" />
+    <ProjectReference Include="..\Modules\Polystone.Modules.Catch\Polystone.Modules.Catch.csproj" />
     <ProjectReference Include="..\Modules\Polystone.Modules.Home\Polystone.Modules.Home.csproj" />
-    <ProjectReference Include="..\Modules\Polystone.Modules.Setting\Polystone.Modules.Setting.csproj" />
+    <ProjectReference Include="..\Modules\Polystone.Modules.Map\Polystone.Modules.Map.csproj" />
     <ProjectReference Include="..\Polystone.Core\Polystone.Core.csproj" />
     <ProjectReference Include="..\Polystone.Services.Interfaces\Polystone.Services.Interfaces.csproj" />
     <ProjectReference Include="..\Polystone.Services\Polystone.Services.csproj" />

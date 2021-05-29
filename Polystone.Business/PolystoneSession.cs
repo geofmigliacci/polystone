@@ -1,64 +1,117 @@
 ﻿using NetCoreServer;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using POGOProtos.Rpc;
+using Polystone.Business.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Sockets;
+using System.Runtime.Serialization;
 using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace Polystone.Business
 {
-    public sealed class PolystoneSession : TcpSession
+    public sealed class Payload
     {
-        bool Reading = false;
-        StringBuilder CurrentMessage = new StringBuilder();
+        [JsonProperty("type")]
+        public int Type { get; set; }
+        [JsonProperty("proto")]
+        public string Proto { get; set; }
+        [JsonProperty("lat")]
+        public double Lat { get; set; }
+        [JsonProperty("lng")]
+        public double Lng { get; set; }
+        [JsonProperty("timestamp")]
+        public long Timestamp { get; set; }
+        [JsonProperty("token")]
+        public string Token { get; set; }
+        [JsonProperty("level")]
+        public string Level { get; set; }
+        [JsonProperty("account_name")]
+        public string AccountName { get; set; }
+        [JsonProperty("account_id")]
+        public string AccountId { get; set; }
 
-        public PolystoneSession(NetCoreServer.TcpServer server) : base(server) { }
+        public Method GetMethod() => (Method)Type;
+        public byte[] ConvertFromBase64String() => Convert.FromBase64String(Proto);
+    }
+
+    public sealed class Content
+    {
+        [JsonProperty("payloads")]
+        public List<Payload> Payloads { get; set; }
+        [JsonProperty("key")]
+        public string Key { get; set; }
+
+        [OnDeserialized]
+        internal void OnDeserializedMethod(StreamingContext context)
+        {
+            Payloads = Payloads.Where(p_ => p_.AccountName != null && p_.AccountName != "null").ToList();
+        }
+    }
+
+    public class PolystoneSession : TcpSession
+    {
+        private bool _reading = false;
+        private StringBuilder _currentMessage = new StringBuilder();
+        private readonly Regex _multipleContent = new Regex(@"(\{""payloads"":.*?,""key"":""[a-z0-9]+""\})", RegexOptions.IgnoreCase);
+
+        public PolystoneSession(TcpServer server) : base(server) { }
 
         protected override void OnConnected()
         {
-            Reading = false;
-            CurrentMessage = new StringBuilder();
-            var o = this;
-        }
-
-        protected override void OnDisconnected()
-        {
-            
+            _reading = false;
+            _currentMessage = new StringBuilder();
         }
 
         protected override void OnReceived(byte[] buffer, long offset, long size)
         {
-            string receiveMessage = Encoding.UTF8.GetString(buffer, (int)offset, (int)size);
-            if (receiveMessage.StartsWith("{"))
+            string receiveMessage = Encoding.UTF8.GetString(buffer, (int)offset, (int)size).Replace("\n", string.Empty).Replace("\r", string.Empty).Trim();
+
+            if (!_reading && receiveMessage.StartsWith("{"))
             {
-                Reading = true;
+                _reading = true;
+                _currentMessage.Clear();
+                _currentMessage = new StringBuilder();
             }
 
-            if (Reading)
+            if (_reading)
             {
-                CurrentMessage.Append(receiveMessage);
-            }
-       
-            if(receiveMessage.EndsWith("}"))
-            {
-                Reading = false;
+                _currentMessage.Append(receiveMessage);
             }
 
-            if(!Reading)
+            if (_reading && receiveMessage.EndsWith("}"))
             {
-
-                CurrentMessage.Clear();
+                _reading = false;
             }
-            // binaire
-            // doit convertir en json (objet generaliste avec héritage) Payload
-            // { type:"CATCH", pokemonId: 14...}
-            // conversion automatique vers l'objet Catch
-        }
 
-        protected override void OnError(SocketError error)
-        {
+            if (!_reading && _currentMessage.Length > 0)
+            {
+                try
+                {
+                    Content content = JsonConvert.DeserializeObject<Content>(_currentMessage.ToString());
+                    foreach (Payload payload in content.Payloads)
+                    {
+                        PolystoneHandler.Handle(payload);
+                    }
+                }
+                catch (Exception)
+                {
+                    foreach (string messageString in _multipleContent.Matches(_currentMessage.ToString()).Cast<Match>().Select(match => match.Value))
+                    {
+                        Content content = JsonConvert.DeserializeObject<Content>(messageString);
+                        foreach (Payload payload in content.Payloads)
+                        {
+                            PolystoneHandler.Handle(payload);
+                        }
+                    }
+                }
 
+                _reading = false;
+                _currentMessage.Clear();
+                _currentMessage = new StringBuilder();
+            }
         }
     }
 }

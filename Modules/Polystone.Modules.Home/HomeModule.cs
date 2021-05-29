@@ -21,17 +21,12 @@ namespace Polystone.Modules.Home
 
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            _regionManager.RegisterViewWithRegion(RegionNames.ContentRegion, typeof(Views.Home));
+            // _regionManager.RegisterViewWithRegion(RegionNames.ContentRegion, typeof(Views.Home));
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            ViewModelLocationProvider.Register<Views.Home, HomeViewModel>();
-
-            containerRegistry.RegisterForNavigation<Views.Home, HomeViewModel>();
-
-            containerRegistry.RegisterSingleton<IPolystoneDatabaseService, PolystoneDatabaseService>();
-            containerRegistry.RegisterSingleton<IAccountService, AccountService>();
+            containerRegistry.RegisterForNavigation<Views.Home>();
         }
     }
 }

@@ -58,7 +58,11 @@
           "dependencies": {
             "Prism.Wpf": {
               "target": "Package",
-              "version": "[8.0.0.1909, )"
+              "version": "[8.1.97, )"
+            },
+            "Syncfusion.SfChart.WPF": {
+              "target": "Package",
+              "version": "[19.1.0.65, )"
             }
           },
           "imports": [
@@ -125,6 +129,16 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.17.2, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.38.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.6, )"
@@ -141,7 +155,11 @@
             },
             "NetCoreServer": {
               "target": "Package",
-              "version": "[5.0.16, )"
+              "version": "[5.0.18, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -338,6 +356,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "System.ComponentModel.Composition": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

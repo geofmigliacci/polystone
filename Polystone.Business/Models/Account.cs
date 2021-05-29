@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -9,38 +11,22 @@ namespace Polystone.Business.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int Id { get; set; }
-
+        public ulong Id { get; set; }
         [Required]
-        [MaxLength(64)]
+        [MaxLength(32)]
         public string Name { get; set; }
+        [DefaultValue(null)]
+        public DateTime? CreationDate { get; set; }
+        [DefaultValue(null)]
+        public DateTime? LastUpdateDate { get; set; }
 
-        [Required]
-        [MaxLength(64)]
-        public string HashedName { get; set; }
+        public ulong? CurrentHistoryId { get; set; }
+        [ForeignKey("CurrentHistoryId")]
+        public AccountHistory? CurrentHistory { get; set; }
 
-        [DefaultValue(0)]
-        public int TotalXp { get; set; }
-
-        [DefaultValue(0)]
-        public int TotalStardust { get; set; }
-
-        [DefaultValue(0)]
-        public int CaughtPokemons { get; set; }
-
-        [DefaultValue(0)]
-        public int EscapedPokemons { get; set; }
-
-        [DefaultValue(0)]
-        public int ShinyPokemons { get; set; }
-
-        [DefaultValue(0)]
-        public int Pokestops { get; set; }
-
-        [DefaultValue(0)]
-        public int Rockets { get; set; }
-
-        [DefaultValue(0)]
-        public int Raids { get; set; }
+        [InverseProperty("Account")]
+        public ICollection<AccountHistory> AccountHistories { get; set; }
+        public ICollection<AccountCatch> AccountCatches { get; set; }
+        public ICollection<AccountCandy> AccountCandies { get; set; }
     }
 }

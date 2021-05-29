@@ -4,14 +4,14 @@
     "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone\\Polystone.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Home\\Polystone.Modules.Home.csproj": {
+    "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Account\\Polystone.Modules.Account.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Home\\Polystone.Modules.Home.csproj",
-        "projectName": "Polystone.Modules.Home",
-        "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Home\\Polystone.Modules.Home.csproj",
+        "projectUniqueName": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Account\\Polystone.Modules.Account.csproj",
+        "projectName": "Polystone.Modules.Account",
+        "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Account\\Polystone.Modules.Account.csproj",
         "packagesPath": "C:\\Users\\Geoffrey MIGLIACCI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Home\\obj\\",
+        "outputPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Account\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Setting\\Polystone.Modules.Setting.csproj": {
+    "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Candy\\Polystone.Modules.Candy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Setting\\Polystone.Modules.Setting.csproj",
-        "projectName": "Polystone.Modules.Setting",
-        "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Setting\\Polystone.Modules.Setting.csproj",
+        "projectUniqueName": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Candy\\Polystone.Modules.Candy.csproj",
+        "projectName": "Polystone.Modules.Candy",
+        "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Candy\\Polystone.Modules.Candy.csproj",
         "packagesPath": "C:\\Users\\Geoffrey MIGLIACCI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Setting\\obj\\",
+        "outputPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Candy\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -103,16 +103,29 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net5.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Business\\Polystone.Business.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Business\\Polystone.Business.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services\\Polystone.Services.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services\\Polystone.Services.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -122,12 +135,273 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
           "dependencies": {
             "Prism.Wpf": {
               "target": "Package",
               "version": "[8.0.0.1909, )"
+            },
+            "Syncfusion.SfChart.WPF": {
+              "target": "Package",
+              "version": "[19.1.0.65, )"
+            },
+            "Syncfusion.SfGrid.WPF": {
+              "target": "Package",
+              "version": "[19.1.0.65, )"
+            },
+            "Syncfusion.Tools.WPF": {
+              "target": "Package",
+              "version": "[19.1.0.65, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Catch\\Polystone.Modules.Catch.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Catch\\Polystone.Modules.Catch.csproj",
+        "projectName": "Polystone.Modules.Catch",
+        "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Catch\\Polystone.Modules.Catch.csproj",
+        "packagesPath": "C:\\Users\\Geoffrey MIGLIACCI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Catch\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\19.1.0.54\\ToolboxNuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Geoffrey MIGLIACCI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services\\Polystone.Services.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services\\Polystone.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Home\\Polystone.Modules.Home.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Home\\Polystone.Modules.Home.csproj",
+        "projectName": "Polystone.Modules.Home",
+        "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Home\\Polystone.Modules.Home.csproj",
+        "packagesPath": "C:\\Users\\Geoffrey MIGLIACCI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Home\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\19.1.0.54\\ToolboxNuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Geoffrey MIGLIACCI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services\\Polystone.Services.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services\\Polystone.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            },
+            "Syncfusion.SfChart.WPF": {
+              "target": "Package",
+              "version": "[19.1.0.65, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Map\\Polystone.Modules.Map.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Map\\Polystone.Modules.Map.csproj",
+        "projectName": "Polystone.Modules.Map",
+        "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Map\\Polystone.Modules.Map.csproj",
+        "packagesPath": "C:\\Users\\Geoffrey MIGLIACCI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Map\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\19.1.0.54\\ToolboxNuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Geoffrey MIGLIACCI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0-windows7.0": {
+            "targetAlias": "net5.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services\\Polystone.Services.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services\\Polystone.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0-windows7.0": {
+          "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Prism.Wpf": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            },
+            "Syncfusion.SfGrid.WPF": {
+              "target": "Package",
+              "version": "[19.1.0.65, )"
+            },
+            "Syncfusion.SfMaps.WPF": {
+              "target": "Package",
+              "version": "[19.1.0.65, )"
             }
           },
           "imports": [
@@ -194,6 +468,16 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.17.2, )"
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.38.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.6, )"
@@ -210,7 +494,11 @@
             },
             "NetCoreServer": {
               "target": "Package",
-              "version": "[5.0.16, )"
+              "version": "[5.0.18, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -407,6 +695,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "System.ComponentModel.Composition": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -456,11 +750,20 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Account\\Polystone.Modules.Account.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Account\\Polystone.Modules.Account.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Candy\\Polystone.Modules.Candy.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Candy\\Polystone.Modules.Candy.csproj"
+              },
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Catch\\Polystone.Modules.Catch.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Catch\\Polystone.Modules.Catch.csproj"
+              },
               "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Home\\Polystone.Modules.Home.csproj": {
                 "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Home\\Polystone.Modules.Home.csproj"
               },
-              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Setting\\Polystone.Modules.Setting.csproj": {
-                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Setting\\Polystone.Modules.Setting.csproj"
+              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Map\\Polystone.Modules.Map.csproj": {
+                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Modules\\Polystone.Modules.Map\\Polystone.Modules.Map.csproj"
               },
               "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj": {
                 "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj"
@@ -486,35 +789,31 @@
           "dependencies": {
             "Prism.DryIoc": {
               "target": "Package",
-              "version": "[8.0.0.1909, )"
+              "version": "[8.1.97, )"
             },
             "Syncfusion.SfGrid.WPF": {
               "target": "Package",
-              "version": "[19.1.0.64, )"
+              "version": "[19.1.0.65, )"
             },
             "Syncfusion.SfNavigationDrawer.WPF": {
               "target": "Package",
-              "version": "[19.1.0.64, )"
+              "version": "[19.1.0.65, )"
             },
             "Syncfusion.SfSkinManager.WPF": {
               "target": "Package",
-              "version": "[19.1.0.64, )"
+              "version": "[19.1.0.65, )"
             },
             "Syncfusion.Shared.WPF": {
               "target": "Package",
-              "version": "[19.1.0.64, )"
+              "version": "[19.1.0.65, )"
             },
-            "Syncfusion.Themes.MaterialDark.WPF": {
+            "Syncfusion.Themes.Office2019Black.WPF": {
               "target": "Package",
-              "version": "[19.1.0.64, )"
+              "version": "[19.1.0.65, )"
             },
             "Syncfusion.Tools.WPF": {
               "target": "Package",
-              "version": "[19.1.0.64, )"
-            },
-            "syncfusion.ui.wpf.net": {
-              "target": "Package",
-              "version": "[19.1.0.64, )"
+              "version": "[19.1.0.65, )"
             }
           },
           "imports": [

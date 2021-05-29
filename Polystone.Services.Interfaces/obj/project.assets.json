@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Google.Protobuf/3.17.2": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Google.Protobuf.dll": {}
+        }
+      },
       "Microsoft.Data.Sqlite.Core/5.0.6": {
         "type": "package",
         "dependencies": {
@@ -217,13 +226,22 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "NetCoreServer/5.0.16": {
+      "NetCoreServer/5.0.18": {
         "type": "package",
         "compile": {
           "lib/net5.0/NetCoreServer.dll": {}
         },
         "runtime": {
           "lib/net5.0/NetCoreServer.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.4": {
@@ -369,9 +387,11 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Google.Protobuf": "3.17.2",
           "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.6",
-          "NetCoreServer": "5.0.16"
+          "NetCoreServer": "5.0.18",
+          "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
           "bin/placeholder/Polystone.Business.dll": {}
@@ -383,6 +403,29 @@
     }
   },
   "libraries": {
+    "Google.Protobuf/3.17.2": {
+      "sha512": "cBZFASJ3kdJ8gqN1i99gtDTF4JLaU2RtWv+SRYuaLqRnCoeoHh7S/OYnSJCNowi3wXxPf5B0YsgvT06ELk9zvg==",
+      "type": "package",
+      "path": "google.protobuf/3.17.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "google.protobuf.3.17.2.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.pdb",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/net5.0/Google.Protobuf.dll",
+        "lib/net5.0/Google.Protobuf.pdb",
+        "lib/net5.0/Google.Protobuf.xml",
+        "lib/netstandard1.1/Google.Protobuf.dll",
+        "lib/netstandard1.1/Google.Protobuf.pdb",
+        "lib/netstandard1.1/Google.Protobuf.xml",
+        "lib/netstandard2.0/Google.Protobuf.dll",
+        "lib/netstandard2.0/Google.Protobuf.pdb",
+        "lib/netstandard2.0/Google.Protobuf.xml"
+      ]
+    },
     "Microsoft.Data.Sqlite.Core/5.0.6": {
       "sha512": "SWzwdhBvS76iWewmN9YBqQLA56rgdUPzw35Mh0RuotNbKGxYjrbXKsKu/7TG+HG030lgtMyzS8yNLWQCw3bc2g==",
       "type": "package",
@@ -716,16 +759,43 @@
         "version.txt"
       ]
     },
-    "NetCoreServer/5.0.16": {
-      "sha512": "glL22xJkap9mklhu4lQZ6AycNzqJe2DGjMDHp4C7ea+AdMZKo8858Vh9fMt0C8gZ+3GPDcrMmXimfeHs6PzuuQ==",
+    "NetCoreServer/5.0.18": {
+      "sha512": "74Zbhnl7HZeNcAqeUzpCN7C6pcMBQPGg8+uthYw2a/L2xduXC4F8LFpBOPEP4ot42KVNRL/0OwR4vY8XzD/cYA==",
       "type": "package",
-      "path": "netcoreserver/5.0.16",
+      "path": "netcoreserver/5.0.18",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/NetCoreServer.dll",
-        "netcoreserver.5.0.16.nupkg.sha512",
+        "netcoreserver.5.0.18.nupkg.sha512",
         "netcoreserver.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.4": {

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Polystone.Modules.Catch</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.0.0.1909" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Polystone.Core\Polystone.Core.csproj" />
+    <ProjectReference Include="..\..\Polystone.Services.Interfaces\Polystone.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Polystone.Services\Polystone.Services.csproj" />
+  </ItemGroup>
+</Project>

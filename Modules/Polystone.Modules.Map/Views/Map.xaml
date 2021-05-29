@@ -1,0 +1,25 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:prism="http://prismlibrary.com/"             
+            xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="Polystone.Modules.Map.Views.Map"             
+            prism:ViewModelLocator.AutoWireViewModel="True"
+            Width="auto"
+            Height="auto">
+    <UserControl.Resources>
+        <DataTemplate x:Key="ToolTipTemplate">
+            <StackPanel>
+                <TextBlock FontWeight="Bold" FontSize="18" Text="{Binding Data.Name}"/>
+                <TextBlock FontWeight="Light" FontSize="16" Text="{Binding Path=Data.LastUpdateDate, StringFormat='{}{0:dd/MM/yyyy a\\t hh:mm}'}" />
+            </StackPanel>
+        </DataTemplate>
+    </UserControl.Resources>
+    <syncfusion:SfMap MinZoom="3" ZoomLevel="3">
+        <syncfusion:SfMap.Layers>
+            <syncfusion:ImageryLayer LayerType="OSM" Markers="{Binding MapMarkers}">
+                <syncfusion:ImageryLayer.MarkerToolTipSettings>
+                    <syncfusion:ToolTipSetting ShowDuration="60000" ToolTipTemplate="{StaticResource ResourceKey=ToolTipTemplate}"/>
+                </syncfusion:ImageryLayer.MarkerToolTipSettings>
+            </syncfusion:ImageryLayer>
+        </syncfusion:SfMap.Layers>
+    </syncfusion:SfMap>
+</UserControl>

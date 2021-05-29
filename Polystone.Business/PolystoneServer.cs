@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Polystone.Business
 {
-    public sealed class PolystoneServer : TcpServer
+    public class PolystoneServer : TcpServer
     {
         public PolystoneServer(IPAddress address, int port) : base(address, port) { }
 

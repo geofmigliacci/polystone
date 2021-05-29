@@ -10,7 +10,7 @@ namespace Polystone.Business
 {
     public class NavigationItem
     {
-        public Path Icon { get; set; }
+        public Geometry Icon { get; set; }
 
         public string Caption { get; set; }
 

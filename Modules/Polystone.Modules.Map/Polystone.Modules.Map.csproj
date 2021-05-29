@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>Polystone.Modules.Map</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    <PackageReference Include="Syncfusion.SfGrid.WPF" Version="19.1.0.65" />
+    <PackageReference Include="Syncfusion.SfMaps.WPF" Version="19.1.0.65" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Polystone.Core\Polystone.Core.csproj" />
+    <ProjectReference Include="..\..\Polystone.Services.Interfaces\Polystone.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\..\Polystone.Services\Polystone.Services.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,17 +1,11 @@
-﻿using NetCoreServer;
-using Polystone.Business;
+﻿using Polystone.Business;
 using Polystone.Services.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Net.Sockets;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Polystone.Services
 {
-    public sealed class PolystoneServerService : IPolystoneServerService
+    public class PolystoneServerService : IPolystoneServerService
     {
         private PolystoneServer _polystoneServer;
 

@@ -1,16 +1,12 @@
-﻿using Polystone.Business.Models;
-using Polystone.Business;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Polystone.Business;
+using Polystone.Business.Models;
 
 namespace Polystone.Services.Interfaces
 {
-    public interface IPolystoneServerService
+    public interface IPolystoneAccountService
     {
-        public void Start(int port);
-
-        public PolystoneServer GetPolystoneServer();
+        public void SetAccount(Account account);
+        public Account GetAccount();
+        public bool HasAccount();
     }
 }
