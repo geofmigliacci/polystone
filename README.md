@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/General%20Public%20License%203.0-lightgrey.svg?style=for-the-badge)](LICENSE.md)
+[![License](https://img.shields.io/badge/GNU%20General%20Public%20License%203.0-lightgrey.svg?style=for-the-badge)](LICENSE.md)
 
 [![SonarCloud](https://img.shields.io/sonar/quality_gate/polystone?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge)](https://sonarcloud.io/dashboard?id=polystone)
 
