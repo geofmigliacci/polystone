@@ -238,34 +238,27 @@ namespace Polystone.Business
                     break;
                 case Method.GymFeedPokemon:
                     HandleGymFeedPokemon(account, payload);
-                    // xp, stardust
                     break;
                 case Method.CompleteQuest:
                     HandleCompleteQuest(account, payload);
                     break;
                 case Method.CompleteQuestStampCard:
                     HandleCompleteQuestStampCard(account, payload);
-                    // xp, stardust
                     break;
                 case Method.GetHatchedEggs:
                     HandleGetHatchedEggs(account, payload);
-                    // xp
                     break;
                 case Method.FortSearch:
                     HandleFortSearch(account, payload);
-                    // xp
                     break;
                 case Method.EvolvePokemon:
                     HandleEvolvePokemon(account, payload);
-                    // xp
                     break;
                 case Method.InvasionBattleUpdate:
                     HandleInvasionBattleUpdate(account, payload);
-                    // stardust
                     break;
                 case Method.AttackRaid:
                     HandleAttackRaid(account, payload);
-                    // xp, stardust
                     break;
                 case Method.GetPlayer:
                     HandleGetPlayer(account, payload);
@@ -274,12 +267,6 @@ namespace Polystone.Business
                     HandleGetHoloholoInventory(account, payload);
                     break;
                 default:
-                    var test = payload.GetMethod().ToString("G");
-
-                    if (test != null && test != "SavePlayerSnapshot" && test != "CheckSendGift" && test != "FeedBuddy" && test != "SetBuddyPokemon" && test != "GetBuddyStats" && test != "GetBuddyHistory" && test != "5028" && test != "CompleteSnapshotSession" && test != "PetBuddy" && test != "RecycleInventoryItem" && test != "OpenGift" && test != "StartRocketBalloonIncident" && test != "5012" && test != "GetRaidDetails" && test != "QuestEncounter" && test != "5026" && test != "InvasionEncounter" && test != "SavePlayerPreferences" && test != "InvasionOpenCombatSession" && test != "InvasionCompleteDialogue" && test != "StartIncident" && test != "GetDownloadUrls" && test != "GymGetInfo" && test != "RemoveQuest" && test != "GetGeofencedAd" && test != "UseItemEncounter" && test != "FortDetails" && test != "GetDailyEncounter" && test != "5004" && test != "GetRocketBalloon" && test != "GetQuestDetails" && test != "GetVsSeekerStatus" && test != "GetMapObjects" && test != "GetBuddyMap" && test != "GetTodayView" && test != "RemoteGiftPing" && test != "CheckAwardedBadges" && test != "DownloadSettings" && test != "DiskEncounter" && test != "620502" && test != "GetPhotobomb" && test != "GetBuddyWalked" && test != "GetNewQuests" && test != "Encounter" && test != "GetServerTime" && test != "5017")
-                    {
-
-                    }
                     break;
             }
         }
