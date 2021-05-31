@@ -1,4 +1,5 @@
-﻿using Polystone.Modules.Account.Views;
+﻿using Polystone.Core;
+using Polystone.Modules.Account.Views;
 using Polystone.Services;
 using Polystone.Services.Interfaces;
 using Prism.Ioc;
@@ -18,7 +19,7 @@ namespace Polystone.Modules.Account
 
         public void OnInitialized(IContainerProvider containerProvider)
         {
-
+            _regionManager.RegisterViewWithRegion(RegionNames.ContentRegion, typeof(Views.Account));
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)

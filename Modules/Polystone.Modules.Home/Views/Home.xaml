@@ -18,12 +18,13 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="2*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <syncfusion:SfChart Margin="16" Grid.Row="0" Grid.Column="0" Header="Average per day" ColorModel="{StaticResource ExperienceStardustColor}" Palette="Custom">
+        <syncfusion:SfChart Margin="16" Grid.Row="0" Grid.Column="0" Header="Total per day" ColorModel="{StaticResource ExperienceStardustColor}" Palette="Custom">
             <syncfusion:SfChart.Behaviors>
                 <syncfusion:ChartTrackBallBehavior ShowLine="True" />
+                <syncfusion:ChartZoomPanBehavior/>
             </syncfusion:SfChart.Behaviors>
             <syncfusion:SfChart.Legend>
                 <syncfusion:ChartLegend
@@ -38,58 +39,132 @@
             <syncfusion:SfChart.SecondaryAxis>
                 <syncfusion:NumericalAxis HorizontalAlignment="Center"/>
             </syncfusion:SfChart.SecondaryAxis>
-            <syncfusion:SplineAreaSeries Label="Experience" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDayDataPoints}" XBindingPath="Date" YBindingPath="Experience" Opacity="0.25"/>
-            <syncfusion:SplineAreaSeries Label="Stardust" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDayDataPoints}" XBindingPath="Date" YBindingPath="Stardust" Opacity="0.25"/>
+            <syncfusion:AreaSeries Label="Experience" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDataPoints}" XBindingPath="Date" YBindingPath="Experience" Opacity="0.25"/>
+            <syncfusion:AreaSeries Label="Stardust" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDataPoints}" XBindingPath="Date" YBindingPath="Stardust" Opacity="0.25"/>
         </syncfusion:SfChart>
-        <syncfusion:SfChart Margin="16" Grid.Row="0" Grid.Column="1" Header="Total per day" ColorModel="{StaticResource ExperienceStardustColor}" Palette="Custom">
-            <syncfusion:SfChart.Behaviors>
-                <syncfusion:ChartTrackBallBehavior ShowLine="True" />
-            </syncfusion:SfChart.Behaviors>
-            <syncfusion:SfChart.Legend>
-                <syncfusion:ChartLegend
-                    HorizontalContentAlignment="Center"
-                    DockPosition="Bottom" />
-            </syncfusion:SfChart.Legend>
-            <syncfusion:SfChart.PrimaryAxis>
-                <syncfusion:CategoryAxis
-                    LabelFormat="dd/MM/yy"
-                    LabelPlacement="BetweenTicks"/>
-            </syncfusion:SfChart.PrimaryAxis>
-            <syncfusion:SfChart.SecondaryAxis>
-                <syncfusion:NumericalAxis HorizontalAlignment="Center"/>
-            </syncfusion:SfChart.SecondaryAxis>
-            <syncfusion:SplineAreaSeries Label="Experience" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDataPoints}" XBindingPath="Date" YBindingPath="Experience" Opacity="0.25"/>
-            <syncfusion:SplineAreaSeries Label="Stardust" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDataPoints}" XBindingPath="Date" YBindingPath="Stardust" Opacity="0.25"/>
-        </syncfusion:SfChart>
-        <!--<syncfusion:SfChart  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center">
+        <Grid Margin="16" Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <syncfusion:SfChart Margin="16" Grid.Row="0" Grid.Column="0" Header="Average per day" ColorModel="{StaticResource ExperienceStardustColor}" Palette="Custom">
                 <syncfusion:SfChart.Behaviors>
-                    <syncfusion:ChartSelectionBehavior EnableSegmentSelection="True" />
+                    <syncfusion:ChartTrackBallBehavior ShowLine="True" />
+                    <syncfusion:ChartZoomPanBehavior/>
                 </syncfusion:SfChart.Behaviors>
-
                 <syncfusion:SfChart.Legend>
-                    <syncfusion:ChartLegend DockPosition="Bottom" />
+                    <syncfusion:ChartLegend
+                    HorizontalContentAlignment="Center"
+                    DockPosition="Bottom" />
                 </syncfusion:SfChart.Legend>
+                <syncfusion:SfChart.PrimaryAxis>
+                    <syncfusion:CategoryAxis
+                    LabelFormat="dd/MM/yy"
+                    LabelPlacement="BetweenTicks"/>
+                </syncfusion:SfChart.PrimaryAxis>
+                <syncfusion:SfChart.SecondaryAxis>
+                    <syncfusion:NumericalAxis HorizontalAlignment="Center"/>
+                </syncfusion:SfChart.SecondaryAxis>
+                <syncfusion:AreaSeries Label="Experience" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDayDataPoints}" XBindingPath="Date" YBindingPath="Experience" Opacity="0.25"/>
+                <syncfusion:AreaSeries Label="Stardust" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDayDataPoints}" XBindingPath="Date" YBindingPath="Stardust" Opacity="0.25"/>
+            </syncfusion:SfChart>
+            <syncfusion:SfChart Margin="16" Grid.Row="1" Grid.Column="0" Header="Average per hour" ColorModel="{StaticResource ExperienceStardustColor}" Palette="Custom">
+                <syncfusion:SfChart.Behaviors>
+                    <syncfusion:ChartTrackBallBehavior ShowLine="True" />
+                    <syncfusion:ChartZoomPanBehavior/>
+                </syncfusion:SfChart.Behaviors>
+                <syncfusion:SfChart.Legend>
+                    <syncfusion:ChartLegend
+                    HorizontalContentAlignment="Center"
+                    DockPosition="Bottom" />
+                </syncfusion:SfChart.Legend>
+                <syncfusion:SfChart.PrimaryAxis>
+                    <syncfusion:CategoryAxis
+                    LabelFormat="dd/MM/yy"
+                    LabelPlacement="BetweenTicks"/>
+                </syncfusion:SfChart.PrimaryAxis>
+                <syncfusion:SfChart.SecondaryAxis>
+                    <syncfusion:NumericalAxis HorizontalAlignment="Center"/>
+                </syncfusion:SfChart.SecondaryAxis>
+                <syncfusion:AreaSeries Label="Experience" EnableAnimation="True" ItemsSource="{Binding AccountHistoryHourDataPoints}" XBindingPath="Date" YBindingPath="Experience" Opacity="0.25"/>
+                <syncfusion:AreaSeries Label="Stardust" EnableAnimation="True" ItemsSource="{Binding AccountHistoryHourDataPoints}" XBindingPath="Date" YBindingPath="Stardust" Opacity="0.25"/>
+            </syncfusion:SfChart>
+        </Grid>
 
-                <syncfusion:DoughnutSeries
-                                 EnableAnimation="True"
-                                 DoughnutCoefficient="1"
-                                 EnableSmartLabels="True"
-                                 ExplodeIndex="1"
-                                 ExplodeOnMouseClick="True"
-                                 ExplodeRadius="32"
-                                 ItemsSource="{Binding AccountCatches}"
-                                 LabelPosition="Inside"
-                                 ListenPropertyChange="True"
-                                 XBindingPath="Category"
-                                 YBindingPath="Count" >
-                    <syncfusion:DoughnutSeries.AdornmentsInfo>
-                        <syncfusion:ChartAdornmentInfo
-                                        SegmentLabelContent="YValue"
-                                        SegmentLabelFormat="0"
-                                        ShowLabel="True"
-                                        Background="Transparent"/>
-                    </syncfusion:DoughnutSeries.AdornmentsInfo>
-                </syncfusion:DoughnutSeries>
-            </syncfusion:SfChart>-->
+        <syncfusion:SfChart Margin="16" Grid.Row="1" Grid.Column="0" Header="Total per day">
+            <syncfusion:SfChart.Behaviors>
+                <syncfusion:ChartTrackBallBehavior ShowLine="True" />
+                <syncfusion:ChartZoomPanBehavior/>
+            </syncfusion:SfChart.Behaviors>
+            <syncfusion:SfChart.Legend>
+                <syncfusion:ChartLegend
+                    HorizontalContentAlignment="Center"
+                    DockPosition="Bottom" />
+            </syncfusion:SfChart.Legend>
+            <syncfusion:SfChart.PrimaryAxis>
+                <syncfusion:CategoryAxis
+                    LabelFormat="dd/MM/yy"
+                    LabelPlacement="BetweenTicks"/>
+            </syncfusion:SfChart.PrimaryAxis>
+            <syncfusion:SfChart.SecondaryAxis>
+                <syncfusion:NumericalAxis HorizontalAlignment="Center"/>
+            </syncfusion:SfChart.SecondaryAxis>
+            <syncfusion:AreaSeries Label="Pokemon" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDataPoints}" XBindingPath="Date" YBindingPath="PokemonCaught" Opacity="0.25"/>
+            <syncfusion:AreaSeries Label="Pokestop" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDataPoints}" XBindingPath="Date" YBindingPath="PokestopSpinned" Opacity="0.25"/>
+        </syncfusion:SfChart>
+        <Grid Margin="16" Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <syncfusion:SfChart Margin="16" Grid.Row="0" Grid.Column="0" Header="Average per day">
+                <syncfusion:SfChart.Behaviors>
+                    <syncfusion:ChartTrackBallBehavior ShowLine="True" />
+                    <syncfusion:ChartZoomPanBehavior/>
+                </syncfusion:SfChart.Behaviors>
+                <syncfusion:SfChart.Legend>
+                    <syncfusion:ChartLegend
+                    HorizontalContentAlignment="Center"
+                    DockPosition="Bottom" />
+                </syncfusion:SfChart.Legend>
+                <syncfusion:SfChart.PrimaryAxis>
+                    <syncfusion:CategoryAxis
+                    LabelFormat="dd/MM/yy"
+                    LabelPlacement="BetweenTicks"/>
+                </syncfusion:SfChart.PrimaryAxis>
+                <syncfusion:SfChart.SecondaryAxis>
+                    <syncfusion:NumericalAxis HorizontalAlignment="Center"/>
+                </syncfusion:SfChart.SecondaryAxis>
+                <syncfusion:AreaSeries Label="Pokemon" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDayDataPoints}" XBindingPath="Date" YBindingPath="PokemonCaught" Opacity="0.25"/>
+                <syncfusion:AreaSeries Label="Pokestop" EnableAnimation="True" ItemsSource="{Binding AccountHistoryDayDataPoints}" XBindingPath="Date" YBindingPath="PokestopSpinned" Opacity="0.25"/>
+            </syncfusion:SfChart>
+            <syncfusion:SfChart Margin="16" Grid.Row="1" Grid.Column="0" Header="Average per hour">
+                <syncfusion:SfChart.Behaviors>
+                    <syncfusion:ChartTrackBallBehavior ShowLine="True" />
+                    <syncfusion:ChartZoomPanBehavior/>
+                </syncfusion:SfChart.Behaviors>
+                <syncfusion:SfChart.Legend>
+                    <syncfusion:ChartLegend
+                    HorizontalContentAlignment="Center"
+                    DockPosition="Bottom" />
+                </syncfusion:SfChart.Legend>
+                <syncfusion:SfChart.PrimaryAxis>
+                    <syncfusion:CategoryAxis
+                    LabelFormat="dd/MM/yy"
+                    LabelPlacement="BetweenTicks"/>
+                </syncfusion:SfChart.PrimaryAxis>
+                <syncfusion:SfChart.SecondaryAxis>
+                    <syncfusion:NumericalAxis HorizontalAlignment="Center"/>
+                </syncfusion:SfChart.SecondaryAxis>
+                <syncfusion:AreaSeries Label="Pokemon" EnableAnimation="True" ItemsSource="{Binding AccountHistoryHourDataPoints}" XBindingPath="Date" YBindingPath="PokemonCaught" Opacity="0.25"/>
+                <syncfusion:AreaSeries Label="Pokestop" EnableAnimation="True" ItemsSource="{Binding AccountHistoryHourDataPoints}" XBindingPath="Date" YBindingPath="PokestopSpinned" Opacity="0.25"/>
+            </syncfusion:SfChart>
+        </Grid>
     </Grid>
 </UserControl>

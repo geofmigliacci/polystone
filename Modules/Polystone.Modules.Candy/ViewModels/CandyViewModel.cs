@@ -23,7 +23,7 @@ namespace Polystone.Modules.Candy.ViewModels
         private IPolystoneAccountService _polystoneAccountService;
         private IPolystoneContextService _polystoneContextService;
 
-        public ObservableCollection<StackingBarChartModel> AccountCandiesData { get; set; }
+        public ObservableCollection<StackingBarChartModel> DataTableCandies { get; set; }
 
         public CandyViewModel(
             IPolystoneContextService polystoneContextService,
@@ -38,7 +38,7 @@ namespace Polystone.Modules.Candy.ViewModels
                 a_ => a_.Name == currentAccount.Name
             );
 
-            AccountCandiesData = new ObservableCollection<StackingBarChartModel>(account.AccountCandies.Select(c_ => new StackingBarChartModel()
+            DataTableCandies = new ObservableCollection<StackingBarChartModel>(account.AccountCandies.Select(c_ => new StackingBarChartModel()
             {
                 Specie = ((HoloPokemonId)c_.Specie).ToString("g"),
                 Candy = c_.SmallCandy,

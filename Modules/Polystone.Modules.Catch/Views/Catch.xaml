@@ -23,9 +23,9 @@
                         <syncfusion:SfDataGrid.Columns>
                             <syncfusion:GridTextColumn AllowGrouping="True" MappingName="Specie" />
                             <syncfusion:GridDateTimeColumn AllowGrouping="True" MappingName="CatchDate" HeaderText="Caught date" />
-                            <syncfusion:GridNumericColumn AllowGrouping="True" MappingName="Cp" HeaderText="CP"/>
-                            <syncfusion:GridNumericColumn AllowGrouping="True" MappingName="Experience" />
-                            <syncfusion:GridNumericColumn AllowGrouping="True" MappingName="Stardust" />
+                            <syncfusion:GridNumericColumn AllowGrouping="True" MappingName="Cp" HeaderText="CP"  NumberDecimalDigits="0"/>
+                            <syncfusion:GridNumericColumn AllowGrouping="True" MappingName="Experience"  NumberDecimalDigits="0" />
+                            <syncfusion:GridNumericColumn AllowGrouping="True" MappingName="Stardust" NumberDecimalDigits="0" />
                             <syncfusion:GridCheckBoxColumn AllowGrouping="True" MappingName="IsShiny" HeaderText="Shiny" />
                             <syncfusion:GridCheckBoxColumn AllowGrouping="True" MappingName="IsShadow" HeaderText="Shadow" />
                         </syncfusion:SfDataGrid.Columns>

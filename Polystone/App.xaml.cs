@@ -33,9 +33,8 @@ namespace Polystone
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.RegisterSingleton<IApplicationCommands, ApplicationCommands>();
-            containerRegistry.RegisterSingleton<IPolystoneAccountService, PolystoneAccountService>();
             containerRegistry.RegisterSingleton<IPolystoneContextService, PolystoneContextService>();
+            containerRegistry.RegisterSingleton<IPolystoneAccountService, PolystoneAccountService>();
             containerRegistry.RegisterSingleton<IPolystoneServerService, PolystoneServerService>();
         }
 

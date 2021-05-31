@@ -1,6 +1,7 @@
 ﻿<syncfusion:ChromelessWindow x:Class="Polystone.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
@@ -28,13 +29,19 @@
     </syncfusion:ChromelessWindow.Resources>
 
     <syncfusion:SfNavigationDrawer prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}"
-        x:Name="navigationDrawer"
         DisplayMemberPath="Caption"
         DisplayMode="Compact"
         IconMemberPath="Icon"
         ItemContainerStyle="{StaticResource ItemStyle}"
-        SelectedItem="{Binding SelectedItem}"
-        ItemsSource="{Binding Items}"
-        ItemClicked="NavigationDrawer_ItemClicked">
+        ItemsSource="{Binding Items}">
+        <i:Interaction.Triggers>
+            <i:EventTrigger EventName="ItemClicked">
+                <prism:InvokeCommandAction Command="{Binding ItemClickedCommand}" TriggerParameterPath="Item"/>
+            </i:EventTrigger>
+        </i:Interaction.Triggers>
+        <syncfusion:SfNavigationDrawer.FooterItems>
+            <syncfusion:NavigationItem Header="LogOut" SelectionBackground="Transparent">
+            </syncfusion:NavigationItem>
+        </syncfusion:SfNavigationDrawer.FooterItems>
     </syncfusion:SfNavigationDrawer>
 </syncfusion:ChromelessWindow>

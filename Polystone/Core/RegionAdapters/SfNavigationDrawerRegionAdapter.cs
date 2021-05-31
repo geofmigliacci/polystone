@@ -32,10 +32,20 @@ namespace Polystone.Core.RegionAdapters
             {
                 if (e.Action == NotifyCollectionChangedAction.Add)
                 {
-                    foreach (FrameworkElement view in e.NewItems) { 
-                        regionTarget.ContentView = view;
-                    }
-                } 
+                    regionTarget.ContentView = (FrameworkElement)e.NewItems[0];
+                }
+            };
+
+            region.ActiveViews.CollectionChanged += (s, e) =>
+            {
+                if (e.Action == NotifyCollectionChangedAction.Add)
+                {
+                    regionTarget.ContentView = (FrameworkElement)e.NewItems[0];
+                }
+                else if (e.Action == NotifyCollectionChangedAction.Remove)
+                {
+                    regionTarget.ContentView = null;
+                }
             };
         }
 

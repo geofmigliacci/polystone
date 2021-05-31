@@ -17,6 +17,8 @@ namespace Polystone.Business.Models
         public long Experience { get; set; }
         public int Pokecoin { get; set; }
         public int Stardust { get; set; }
+        public int PokemonCaught { get; set; }
+        public int PokestopSpinned { get; set; }
         public double Longitude { get; set; }
         public double Latitude { get; set; }
 

@@ -7,8 +7,6 @@ using System.Net;
 
 namespace Polystone.Services
 {
-    [Export(typeof(IPolystoneAccountService))]
-    [PartCreationPolicy(CreationPolicy.Shared)]
     public class PolystoneAccountService : IPolystoneAccountService
     {
         private Account _account = null;

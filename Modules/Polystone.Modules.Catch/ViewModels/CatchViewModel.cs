@@ -11,12 +11,6 @@ using System.Linq;
 
 namespace Polystone.Modules.Catch.ViewModels
 {
-    public class StackingBarChartModel : BindableBase
-    {
-        public string Specie { get; set; }
-        public int Candy { get; set; }
-        public int XLCandy { get; set; }
-    }
     public class DataTableCatch : BindableBase
     {
         public string Specie { get; set; }
@@ -30,8 +24,8 @@ namespace Polystone.Modules.Catch.ViewModels
 
     public class CatchViewModel : BindableBase
     {
-        private IPolystoneAccountService _polystoneAccountService;
         private IPolystoneContextService _polystoneContextService;
+        private IPolystoneAccountService _polystoneAccountService;
 
         public ObservableCollection<DataTableCatch> DataTableCatches { get; set; }
 

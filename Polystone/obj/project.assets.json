@@ -729,7 +729,10 @@
           "Polystone.Core": "1.0.0",
           "Polystone.Services": "1.0.0",
           "Polystone.Services.Interfaces": "1.0.0",
-          "Prism.Wpf": "8.0.0.1909"
+          "Prism.Wpf": "8.0.0.1909",
+          "Syncfusion.SfChart.WPF": "19.1.0.65",
+          "Syncfusion.SfGrid.WPF": "19.1.0.65",
+          "Syncfusion.Tools.WPF": "19.1.0.65"
         },
         "compile": {
           "bin/placeholder/Polystone.Modules.Account.dll": {}

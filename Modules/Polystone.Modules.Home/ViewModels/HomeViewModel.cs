@@ -17,107 +17,87 @@ namespace Polystone.Modules.Home.ViewModels
         public DateTime Date { get; set; }
         public double Stardust { get; set; }
         public double Experience { get; set; }
-    }
-
-    public class DoughnutChartModel : BindableBase
-    {
-        public string Category { get; set; }
-
-        public int Count { get; set; }
+        public double PokemonCaught { get; set; }
+        public double PokestopSpinned { get; set; }
     }
 
     public class HomeViewModel : BindableBase
     {
         private IPolystoneContextService _polystoneContextService;
+        private IPolystoneAccountService _polystoneAccountService;
 
         public ObservableCollection<AreaChartModel> AccountHistoryDataPoints { get; set; }
         public ObservableCollection<AreaChartModel> AccountHistoryDayDataPoints { get; set; }
-        public ObservableCollection<DoughnutChartModel> AccountCatches { get; set; }
+        public ObservableCollection<AreaChartModel> AccountHistoryHourDataPoints { get; set; }
 
-        public HomeViewModel(IPolystoneContextService polystoneContextService)
+        public HomeViewModel(
+            IPolystoneContextService polystoneContextService,
+            IPolystoneAccountService polystoneAccountService
+        )
         {
             _polystoneContextService = polystoneContextService;
+            _polystoneAccountService = polystoneAccountService;
 
+            Account currentAccount = _polystoneAccountService.GetAccount();
             IEnumerable<AccountHistory> accountHistories = _polystoneContextService.GetPolystoneContext().Accounts.Include(a_ => a_.AccountHistories).FirstOrDefault(
-                a_ => a_.Name == "Kawaakago"
+                a_ => a_.Name == currentAccount.Name
             ).AccountHistories.Where(ah_ =>
                 ah_.Experience > 0 &&
                 ah_.Stardust > 0
             );
 
             IEnumerable<AccountCatch> accountCatches = _polystoneContextService.GetPolystoneContext().Accounts.Include(a_ => a_.AccountCatches).FirstOrDefault(
-                a_ => a_.Name == "Kawaakago"
+                a_ => a_.Name == currentAccount.Name
             ).AccountCatches.Where(ac_ =>
-                ac_.Experience > 0 &&
-                ac_.Stardust > 0 &&
                 ac_.Specie > -1
             );
 
-            IEnumerable<AccountCandy> accountCandies = _polystoneContextService.GetPolystoneContext().Accounts.Include(a_ => a_.AccountCandies).FirstOrDefault(
-                a_ => a_.Name == "Kawaakago"
-            ).AccountCandies;
-
-            int shinies = accountCatches.Count(ac_ => ac_.IsShiny);
-            int shadows = accountCatches.Count(ac_ => ac_.IsShadow);
-            int both = accountCatches.Count(ac_ =>
-                ac_.IsShadow &&
-                ac_.IsShiny
-            );
-            int normals = accountCatches.Count(ac_ =>
-                !ac_.IsShadow &&
-                !ac_.IsShiny
-            );
-
-            AccountCatches = new ObservableCollection<DoughnutChartModel>();
-            AccountCatches.Add(new DoughnutChartModel()
-            {
-                Category = "Shinies",
-                Count = shinies
-            });
-            AccountCatches.Add(new DoughnutChartModel()
-            {
-                Category = "Shadows",
-                Count = shadows
-            });
-            AccountCatches.Add(new DoughnutChartModel()
-            {
-                Category = "Shadow Shiny",
-                Count = both
-            });
-            AccountCatches.Add(new DoughnutChartModel()
-            {
-                Category = "Normal",
-                Count = normals
-            });
+            AccountHistoryDataPoints = new ObservableCollection<AreaChartModel>();
+            AccountHistoryDayDataPoints = new ObservableCollection<AreaChartModel>();
+            AccountHistoryHourDataPoints = new ObservableCollection<AreaChartModel>();
 
             DateTime tomorrow = DateTime.Today.AddDays(1);
             DateTime lastMonth = DateTime.Today.AddMonths(-1);
-            AccountHistoryDataPoints = new ObservableCollection<AreaChartModel>();
-            AccountHistoryDayDataPoints = new ObservableCollection<AreaChartModel>();
+
             while (lastMonth < tomorrow)
             {
                 IEnumerable<AccountHistory> currentAccountHistories = accountHistories.Where(ah_ =>
                     ah_.CreationDate.Date == lastMonth.Date
                 );
-                if(currentAccountHistories.Count() > 0)
+                if (currentAccountHistories.Count() > 0)
                 {
+                    AccountHistory lastAccountHistory = currentAccountHistories.OrderByDescending(ah_ => ah_.CreationDate).FirstOrDefault();
                     AccountHistoryDataPoints.Add(
                         new AreaChartModel()
                         {
                             Date = lastMonth,
-                            Stardust = Math.Round(currentAccountHistories.Average(ah_ => ah_.Stardust)),
-                            Experience = Math.Round(currentAccountHistories.Average(ah_ => ah_.Experience))
+                            Stardust = lastAccountHistory.Stardust,
+                            Experience = lastAccountHistory.Experience,
+                            PokemonCaught = lastAccountHistory.PokemonCaught,
+                            PokestopSpinned = lastAccountHistory.PokestopSpinned
                         }
                     );
 
                     AccountHistory firstAccountHistory = currentAccountHistories.OrderBy(ah_ => ah_.CreationDate).FirstOrDefault();
-                    AccountHistory lastAccountHistory = currentAccountHistories.OrderByDescending(ah_ => ah_.CreationDate).FirstOrDefault();
                     AccountHistoryDayDataPoints.Add(
                         new AreaChartModel()
                         {
                             Date = lastMonth,
                             Stardust = lastAccountHistory.Stardust - firstAccountHistory.Stardust,
                             Experience = lastAccountHistory.Experience - firstAccountHistory.Experience,
+                            PokemonCaught = lastAccountHistory.PokemonCaught - firstAccountHistory.PokemonCaught,
+                            PokestopSpinned = lastAccountHistory.PokestopSpinned - firstAccountHistory.PokestopSpinned
+                        }
+                    );
+
+                    AccountHistoryHourDataPoints.Add(
+                        new AreaChartModel()
+                        {
+                            Date = lastMonth,
+                            Stardust = (lastAccountHistory.Stardust - firstAccountHistory.Stardust) / 24,
+                            Experience = (lastAccountHistory.Experience - firstAccountHistory.Experience) / 24,
+                            PokemonCaught = (lastAccountHistory.PokemonCaught - firstAccountHistory.PokemonCaught) / 24,
+                            PokestopSpinned = (lastAccountHistory.PokestopSpinned - firstAccountHistory.PokestopSpinned) / 24
                         }
                     );
                 }

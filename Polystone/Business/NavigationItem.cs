@@ -15,6 +15,7 @@ namespace Polystone.Business
         public string Caption { get; set; }
 
         public string NavigationPath { get; set; }
+        public bool IsAuthentication { get; set; }
 
     }
 }

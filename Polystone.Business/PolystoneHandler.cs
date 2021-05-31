@@ -128,6 +128,8 @@ namespace Polystone.Business
                     Experience = account.CurrentHistory.Experience,
                     Pokecoin = pokeCoin,
                     Stardust = stardust,
+                    PokemonCaught = account.CurrentHistory.PokemonCaught,
+                    PokestopSpinned = account.CurrentHistory.PokestopSpinned,
                     Longitude = payload.Lng,
                     Latitude = payload.Lat
                 };
@@ -161,7 +163,7 @@ namespace Polystone.Business
             if (playerStatsInventoryItemData != null)
             {
                 PlayerStatsProto playerStats = playerStatsInventoryItemData.InventoryItemData.PlayerStats;
-                if (playerStats.Level != account.CurrentHistory.Level || (playerStats.Experience - account.CurrentHistory.Experience >= 10000))
+                if (playerStats.Experience - account.CurrentHistory.Experience >= 10000)
                 {
                     AccountHistory accountHistory = new AccountHistory()
                     {
@@ -170,6 +172,8 @@ namespace Polystone.Business
                         Experience = playerStats.Experience,
                         Pokecoin = account.CurrentHistory.Pokecoin,
                         Stardust = account.CurrentHistory.Stardust,
+                        PokemonCaught = playerStats.NumPokemonCaptured,
+                        PokestopSpinned = playerStats.PokeStopVisits,
                         Longitude = payload.Lng,
                         Latitude = payload.Lat
                     };

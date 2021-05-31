@@ -15,9 +15,17 @@
                 <Grid Margin="16">
                     <syncfusion:SfDataGrid 
                         AllowFiltering="True"
-                        AutoGenerateColumns="True"
+                        IsGroupDropAreaExpanded="True"
+                        AutoGenerateColumns="False"
                         ColumnSizer="Star"
-                        ItemsSource="{Binding AccountCandiesData}" />
+                        ItemsSource="{Binding DataTableCandies}"
+                        ShowGroupDropArea="True">
+                        <syncfusion:SfDataGrid.Columns>
+                            <syncfusion:GridTextColumn AllowGrouping="True" MappingName="Specie" />
+                            <syncfusion:GridNumericColumn AllowGrouping="True" MappingName="Candy" HeaderText="Candy" NumberDecimalDigits="0"/>
+                            <syncfusion:GridNumericColumn AllowGrouping="True" MappingName="XLCandy" HeaderText="XL Candy" NumberDecimalDigits="0"/>
+                        </syncfusion:SfDataGrid.Columns>
+                    </syncfusion:SfDataGrid>
                 </Grid>
             </syncfusion:TabItemExt>
             <!--<syncfusion:TabItemExt Header="Chart" CanClose="False">
