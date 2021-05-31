@@ -31,7 +31,9 @@ namespace Polystone.Modules.Account.ViewModels
         private IPolystoneAccountService _polystoneAccountService;
 
         public ObservableCollection<DataTableAccount> DataTableAccounts { get; set; }
-        public DelegateCommand<List<object>> SelectionChangedCommand { get; private set; }
+        public DelegateCommand<List<object>> SelectionChangedCommand { get; set; }
+
+        public DispatcherTimer DispatcherTimer { get; set; }
 
         public AccountViewModel(
             IPolystoneContextService polystoneContextService,
@@ -60,12 +62,21 @@ namespace Polystone.Modules.Account.ViewModels
                 })
             );
 
+            if(DataTableAccounts.Count() == 1)
+            {
+                _polystoneAccountService.SetAccount(
+                   _polystoneContextService.GetPolystoneContext().Accounts.AsNoTracking().FirstOrDefault(a_ =>
+                       a_.Id == DataTableAccounts.FirstOrDefault().Id
+                   )
+               );
+            }
+
             SelectionChangedCommand = new DelegateCommand<List<object>>(OnSelectionChanged);
 
-            DispatcherTimer dispatcherTimer = new DispatcherTimer();
-            dispatcherTimer.Tick += new EventHandler(DispatcherTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 5);
-            dispatcherTimer.Start();
+            DispatcherTimer = new DispatcherTimer();
+            DispatcherTimer.Tick += new EventHandler(DispatcherTimer_Tick);
+            DispatcherTimer.Interval = new TimeSpan(0, 0, 5);
+            DispatcherTimer.Start();
         }
 
         private void OnSelectionChanged(List<object> selectedItems)

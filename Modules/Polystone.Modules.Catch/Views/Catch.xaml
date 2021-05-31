@@ -33,48 +33,7 @@
                 </Grid>
             </syncfusion:TabItemExt>
             <!--<syncfusion:TabItemExt Header="Chart" CanClose="False">
-                <Grid Margin="16">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <syncfusion:SfChart Grid.Column="0" Grid.Row="0">
-
-                        <syncfusion:SfChart.Legend>
-                            <syncfusion:ChartLegend
-                    DockPosition="Bottom"/>
-                        </syncfusion:SfChart.Legend>
-
-                        <syncfusion:StackingBarSeries
-                syncfusion:ChartTooltip.EnableAnimation="True"
-                EnableAnimation="True"
-                ItemsSource="{Binding AccountCandiesData}"
-                Label="Candy"
-                XBindingPath="Specie"
-                YBindingPath="Candy">
-                            <syncfusion:StackingBarSeries.AdornmentsInfo>
-                                <syncfusion:ChartAdornmentInfo
-                        ShowLabel="True" />
-                            </syncfusion:StackingBarSeries.AdornmentsInfo>
-                        </syncfusion:StackingBarSeries>
-
-                        <syncfusion:StackingBarSeries
-                syncfusion:ChartTooltip.EnableAnimation="True"
-                EnableAnimation="True"
-                ItemsSource="{Binding AccountCandiesData}"
-                Label="XL Candy"
-                XBindingPath="Specie"
-                YBindingPath="XLCandy">
-                            <syncfusion:StackingBarSeries.AdornmentsInfo>
-                                <syncfusion:ChartAdornmentInfo
-                        LabelPosition="Inner"
-                        ShowLabel="True" />
-                            </syncfusion:StackingBarSeries.AdornmentsInfo>
-                        </syncfusion:StackingBarSeries>
-                    </syncfusion:SfChart>
-                </Grid>
+                
             </syncfusion:TabItemExt>-->
         </syncfusion:TabControlExt>
     </Grid>

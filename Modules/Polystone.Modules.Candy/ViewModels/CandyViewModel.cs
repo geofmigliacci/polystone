@@ -22,6 +22,8 @@ namespace Polystone.Modules.Candy.ViewModels
     {
         private IPolystoneAccountService _polystoneAccountService;
         private IPolystoneContextService _polystoneContextService;
+        
+        public Account CurrentAccount { get; set; }
 
         public ObservableCollection<StackingBarChartModel> DataTableCandies { get; set; }
 
@@ -33,9 +35,9 @@ namespace Polystone.Modules.Candy.ViewModels
             _polystoneAccountService = polystoneAccountService;
             _polystoneContextService = polystoneContextService;
 
-            Account currentAccount = _polystoneAccountService.GetAccount();
-            Account account = _polystoneContextService.GetPolystoneContext().Accounts.Include(a_ => a_.AccountCandies).FirstOrDefault(
-                a_ => a_.Name == currentAccount.Name
+            CurrentAccount = _polystoneAccountService.GetAccount();
+            Account account = _polystoneContextService.GetPolystoneContext().Accounts.AsNoTracking().Include(a_ => a_.AccountCandies).FirstOrDefault(
+                a_ => a_.Name == CurrentAccount.Name
             );
 
             DataTableCandies = new ObservableCollection<StackingBarChartModel>(account.AccountCandies.Select(c_ => new StackingBarChartModel()

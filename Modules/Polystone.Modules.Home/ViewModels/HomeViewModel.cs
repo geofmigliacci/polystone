@@ -15,16 +15,17 @@ namespace Polystone.Modules.Home.ViewModels
     public class AreaChartModel : BindableBase
     {
         public DateTime Date { get; set; }
-        public double Stardust { get; set; }
-        public double Experience { get; set; }
-        public double PokemonCaught { get; set; }
-        public double PokestopSpinned { get; set; }
+        public int Stardust { get; set; }
+        public long Experience { get; set; }
+        public int PokemonCaught { get; set; }
+        public int PokestopSpinned { get; set; }
     }
 
     public class HomeViewModel : BindableBase
     {
         private IPolystoneContextService _polystoneContextService;
         private IPolystoneAccountService _polystoneAccountService;
+        public Account CurrentAccount { get; set; }
 
         public ObservableCollection<AreaChartModel> AccountHistoryDataPoints { get; set; }
         public ObservableCollection<AreaChartModel> AccountHistoryDayDataPoints { get; set; }
@@ -38,16 +39,16 @@ namespace Polystone.Modules.Home.ViewModels
             _polystoneContextService = polystoneContextService;
             _polystoneAccountService = polystoneAccountService;
 
-            Account currentAccount = _polystoneAccountService.GetAccount();
-            IEnumerable<AccountHistory> accountHistories = _polystoneContextService.GetPolystoneContext().Accounts.Include(a_ => a_.AccountHistories).FirstOrDefault(
-                a_ => a_.Name == currentAccount.Name
+            CurrentAccount = _polystoneAccountService.GetAccount();
+            IEnumerable<AccountHistory> accountHistories = _polystoneContextService.GetPolystoneContext().Accounts.AsNoTracking().Include(a_ => a_.AccountHistories).FirstOrDefault(
+                a_ => a_.Name == CurrentAccount.Name
             ).AccountHistories.Where(ah_ =>
                 ah_.Experience > 0 &&
                 ah_.Stardust > 0
             );
 
-            IEnumerable<AccountCatch> accountCatches = _polystoneContextService.GetPolystoneContext().Accounts.Include(a_ => a_.AccountCatches).FirstOrDefault(
-                a_ => a_.Name == currentAccount.Name
+            IEnumerable<AccountCatch> accountCatches = _polystoneContextService.GetPolystoneContext().Accounts.AsNoTracking().Include(a_ => a_.AccountCatches).FirstOrDefault(
+                a_ => a_.Name == CurrentAccount.Name
             ).AccountCatches.Where(ac_ =>
                 ac_.Specie > -1
             );

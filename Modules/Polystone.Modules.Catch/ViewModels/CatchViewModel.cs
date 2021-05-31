@@ -27,6 +27,8 @@ namespace Polystone.Modules.Catch.ViewModels
         private IPolystoneContextService _polystoneContextService;
         private IPolystoneAccountService _polystoneAccountService;
 
+        public Account CurrentAccount { get; set; }
+
         public ObservableCollection<DataTableCatch> DataTableCatches { get; set; }
 
         public CatchViewModel(
@@ -37,9 +39,9 @@ namespace Polystone.Modules.Catch.ViewModels
             _polystoneAccountService = polystoneAccountService;
             _polystoneContextService = polystoneContextService;
 
-            Account currentAccount = _polystoneAccountService.GetAccount();
-            IEnumerable<AccountCatch> accountCatches = _polystoneContextService.GetPolystoneContext().Accounts.Include(a_ => a_.AccountCatches).FirstOrDefault(
-                a_ => a_.Name == currentAccount.Name
+            CurrentAccount = _polystoneAccountService.GetAccount();
+            IEnumerable<AccountCatch> accountCatches = _polystoneContextService.GetPolystoneContext().Accounts.AsNoTracking().Include(a_ => a_.AccountCatches).FirstOrDefault(
+                a_ => a_.Name == CurrentAccount.Name
             ).AccountCatches.Where(c_ => 
                 c_.Specie > -1
             );
