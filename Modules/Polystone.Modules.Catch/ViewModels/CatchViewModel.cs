@@ -4,6 +4,7 @@ using Polystone.Business.Models;
 using Polystone.Services.Interfaces;
 using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Regions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -22,7 +23,7 @@ namespace Polystone.Modules.Catch.ViewModels
         public bool IsShadow { get; set; }
     }
 
-    public class CatchViewModel : BindableBase
+    public class CatchViewModel : BindableBase, INavigationAware
     {
         private IPolystoneContextService _polystoneContextService;
         private IPolystoneAccountService _polystoneAccountService;
@@ -56,6 +57,21 @@ namespace Polystone.Modules.Catch.ViewModels
                 IsShiny = c_.IsShiny,
                 IsShadow = c_.IsShadow,
             }));
+        }
+
+        public void OnNavigatedTo(NavigationContext navigationContext)
+        {
+
+        }
+
+        public bool IsNavigationTarget(NavigationContext navigationContext)
+        {
+            return true;
+        }
+
+        public void OnNavigatedFrom(NavigationContext navigationContext)
+        {
+
         }
     }
 }

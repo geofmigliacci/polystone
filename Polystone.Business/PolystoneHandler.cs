@@ -1,6 +1,6 @@
-﻿using POGOProtos.Rpc;
+﻿using Microsoft.EntityFrameworkCore;
+using POGOProtos.Rpc;
 using Polystone.Business.Models;
-using Polystone.Business.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,6 @@ namespace Polystone.Business
     public static class PolystoneHandler
     {
         private static PolystoneContext _polystoneContext = new PolystoneContext();
-        private static AccountRepository _accountRepository = new AccountRepository(_polystoneContext);
 
         static void HandleCatchPokemon(Account account, Payload payload)
         {
@@ -113,7 +112,7 @@ namespace Polystone.Business
             {
                 return;
             }
-
+            
             int pokeCoin = getPlayerOut.Player.CurrencyBalance.FirstOrDefault(c_ => c_.CurrencyType == "POKECOIN").Quantity;
             int stardust = getPlayerOut.Player.CurrencyBalance.FirstOrDefault(c_ => c_.CurrencyType == "STARDUST").Quantity;
 
@@ -225,10 +224,30 @@ namespace Polystone.Business
 
         public static void Handle(Payload payload)
         {
-            Account account = _accountRepository.CreateAccountIfNotExist(payload);
+            Account account = _polystoneContext.Accounts.Include(a_ => a_.CurrentHistory).FirstOrDefault(a_ => 
+                a_.Name == payload.AccountName
+            );
             if (account == null)
             {
-                return;
+                Account accountCreation = new Account()
+                {
+                    Name = payload.AccountName,
+                    LastUpdateDate = DateTime.UtcNow
+                };
+                _polystoneContext.Accounts.Add(accountCreation);
+                _polystoneContext.SaveChanges();
+
+                AccountHistory accountHistory = new AccountHistory()
+                {
+                    CreationDate = DateTime.UtcNow,
+                    Level = Convert.ToInt32(payload.Level),
+                    Longitude = payload.Lng,
+                    Latitude = payload.Lat,
+                    Account = accountCreation
+                };
+                accountCreation.CurrentHistory = accountHistory;
+                _polystoneContext.SaveChanges();
+                account = accountCreation;
             }
 
             switch (payload.GetMethod())
