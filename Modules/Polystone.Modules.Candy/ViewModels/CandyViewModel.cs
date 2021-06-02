@@ -4,6 +4,7 @@ using Polystone.Business.Models;
 using Polystone.Services.Interfaces;
 using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Regions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -18,7 +19,7 @@ namespace Polystone.Modules.Candy.ViewModels
         public int XLCandy { get; set; }
     }
 
-    public class CandyViewModel : BindableBase
+    public class CandyViewModel : BindableBase, INavigationAware
     {
         private IPolystoneAccountService _polystoneAccountService;
         private IPolystoneContextService _polystoneContextService;
@@ -46,6 +47,21 @@ namespace Polystone.Modules.Candy.ViewModels
                 Candy = c_.SmallCandy,
                 XLCandy = c_.XLCandy
             }));
+        }
+
+        public void OnNavigatedTo(NavigationContext navigationContext)
+        {
+
+        }
+
+        public bool IsNavigationTarget(NavigationContext navigationContext)
+        {
+            return _polystoneAccountService.HasAccount();
+        }
+
+        public void OnNavigatedFrom(NavigationContext navigationContext)
+        {
+
         }
     }
 }

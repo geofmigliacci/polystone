@@ -5,6 +5,7 @@ using Polystone.Services;
 using Polystone.Services.Interfaces;
 using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Regions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -21,7 +22,7 @@ namespace Polystone.Modules.Home.ViewModels
         public int PokestopSpinned { get; set; }
     }
 
-    public class HomeViewModel : BindableBase
+    public class HomeViewModel : BindableBase, INavigationAware
     {
         private IPolystoneContextService _polystoneContextService;
         private IPolystoneAccountService _polystoneAccountService;
@@ -104,6 +105,21 @@ namespace Polystone.Modules.Home.ViewModels
                 }
                 lastMonth = lastMonth.AddDays(1);
             }
+        }
+
+        public void OnNavigatedTo(NavigationContext navigationContext)
+        {
+
+        }
+
+        public bool IsNavigationTarget(NavigationContext navigationContext)
+        {
+            return _polystoneAccountService.HasAccount();
+        }
+
+        public void OnNavigatedFrom(NavigationContext navigationContext)
+        {
+
         }
     }
 }

@@ -3,6 +3,7 @@ using Polystone.Business.Models;
 using Polystone.Services.Interfaces;
 using Prism.Commands;
 using Prism.Mvvm;
+using Prism.Regions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -19,7 +20,7 @@ namespace Polystone.Modules.Map.ViewModels
         public string Name { get; set; }
     }
 
-    public class MapViewModel : BindableBase
+    public class MapViewModel : BindableBase, INavigationAware
     {
         private IPolystoneContextService _polystoneContextService;
         private IPolystoneAccountService _polystoneAccountService;
@@ -76,6 +77,21 @@ namespace Polystone.Modules.Map.ViewModels
                 Longitude = account.CurrentHistory.Longitude,
                 Name = account.Name
             });
+        }
+
+        public void OnNavigatedTo(NavigationContext navigationContext)
+        {
+
+        }
+
+        public bool IsNavigationTarget(NavigationContext navigationContext)
+        {
+            return _polystoneAccountService.HasAccount();
+        }
+
+        public void OnNavigatedFrom(NavigationContext navigationContext)
+        {
+
         }
     }
 }

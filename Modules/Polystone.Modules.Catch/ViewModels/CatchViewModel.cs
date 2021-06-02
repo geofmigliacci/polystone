@@ -66,7 +66,7 @@ namespace Polystone.Modules.Catch.ViewModels
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
         {
-            return true;
+            return _polystoneAccountService.HasAccount();
         }
 
         public void OnNavigatedFrom(NavigationContext navigationContext)
