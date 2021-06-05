@@ -18,12 +18,12 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgSyncfusion_Shared_WPF Condition=" '$(PkgSyncfusion_Shared_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.shared.wpf\19.1.0.65</PkgSyncfusion_Shared_WPF>
-    <PkgSyncfusion_Tools_WPF Condition=" '$(PkgSyncfusion_Tools_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.tools.wpf\19.1.0.65</PkgSyncfusion_Tools_WPF>
-    <PkgSyncfusion_SfNavigationDrawer_WPF Condition=" '$(PkgSyncfusion_SfNavigationDrawer_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.sfnavigationdrawer.wpf\19.1.0.65</PkgSyncfusion_SfNavigationDrawer_WPF>
-    <PkgSyncfusion_SfMaps_WPF Condition=" '$(PkgSyncfusion_SfMaps_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.sfmaps.wpf\19.1.0.65</PkgSyncfusion_SfMaps_WPF>
-    <PkgSyncfusion_SfGrid_WPF Condition=" '$(PkgSyncfusion_SfGrid_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.sfgrid.wpf\19.1.0.65</PkgSyncfusion_SfGrid_WPF>
-    <PkgSyncfusion_SfChart_WPF Condition=" '$(PkgSyncfusion_SfChart_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.sfchart.wpf\19.1.0.65</PkgSyncfusion_SfChart_WPF>
+    <PkgSyncfusion_Shared_WPF Condition=" '$(PkgSyncfusion_Shared_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.shared.wpf\19.1.0.66</PkgSyncfusion_Shared_WPF>
+    <PkgSyncfusion_Tools_WPF Condition=" '$(PkgSyncfusion_Tools_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.tools.wpf\19.1.0.66</PkgSyncfusion_Tools_WPF>
+    <PkgSyncfusion_SfNavigationDrawer_WPF Condition=" '$(PkgSyncfusion_SfNavigationDrawer_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.sfnavigationdrawer.wpf\19.1.0.66</PkgSyncfusion_SfNavigationDrawer_WPF>
+    <PkgSyncfusion_SfMaps_WPF Condition=" '$(PkgSyncfusion_SfMaps_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.sfmaps.wpf\19.1.0.66</PkgSyncfusion_SfMaps_WPF>
+    <PkgSyncfusion_SfGrid_WPF Condition=" '$(PkgSyncfusion_SfGrid_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.sfgrid.wpf\19.1.0.66</PkgSyncfusion_SfGrid_WPF>
+    <PkgSyncfusion_SfChart_WPF Condition=" '$(PkgSyncfusion_SfChart_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.sfchart.wpf\19.1.0.66</PkgSyncfusion_SfChart_WPF>
     <PkgMicrosoft_Xaml_Behaviors_Wpf Condition=" '$(PkgMicrosoft_Xaml_Behaviors_Wpf)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\microsoft.xaml.behaviors.wpf\1.1.31</PkgMicrosoft_Xaml_Behaviors_Wpf>
   </PropertyGroup>
 </Project>

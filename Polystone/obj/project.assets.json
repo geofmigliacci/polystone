@@ -268,7 +268,7 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "NetCoreServer/5.0.18": {
+      "NetCoreServer/5.1.0": {
         "type": "package",
         "compile": {
           "lib/net5.0/NetCoreServer.dll": {}
@@ -430,7 +430,7 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.dynamic_cdecl.dll": {}
         }
       },
-      "Syncfusion.Data.WPF/19.1.0.65": {
+      "Syncfusion.Data.WPF/19.1.0.66": {
         "type": "package",
         "compile": {
           "lib/net5.0-windows/Syncfusion.Data.WPF.dll": {}
@@ -439,7 +439,7 @@
           "lib/net5.0-windows/Syncfusion.Data.WPF.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.1.0.65": {
+      "Syncfusion.Licensing/19.1.0.66": {
         "type": "package",
         "compile": {
           "lib/net5.0/Syncfusion.Licensing.dll": {}
@@ -448,10 +448,10 @@
           "lib/net5.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfChart.WPF/19.1.0.65": {
+      "Syncfusion.SfChart.WPF/19.1.0.66": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65"
+          "Syncfusion.Licensing": "19.1.0.66"
         },
         "compile": {
           "lib/net5.0-windows/Syncfusion.SfChart.WPF.dll": {}
@@ -460,12 +460,12 @@
           "lib/net5.0-windows/Syncfusion.SfChart.WPF.dll": {}
         }
       },
-      "Syncfusion.SfGrid.WPF/19.1.0.65": {
+      "Syncfusion.SfGrid.WPF/19.1.0.66": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Data.WPF": "19.1.0.65",
-          "Syncfusion.Licensing": "19.1.0.65",
-          "Syncfusion.Shared.WPF": "19.1.0.65"
+          "Syncfusion.Data.WPF": "19.1.0.66",
+          "Syncfusion.Licensing": "19.1.0.66",
+          "Syncfusion.Shared.WPF": "19.1.0.66"
         },
         "compile": {
           "lib/net5.0-windows/Syncfusion.SfGrid.WPF.dll": {}
@@ -474,11 +474,11 @@
           "lib/net5.0-windows/Syncfusion.SfGrid.WPF.dll": {}
         }
       },
-      "Syncfusion.SfMaps.WPF/19.1.0.65": {
+      "Syncfusion.SfMaps.WPF/19.1.0.66": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65",
-          "Syncfusion.Shared.WPF": "19.1.0.65"
+          "Syncfusion.Licensing": "19.1.0.66",
+          "Syncfusion.Shared.WPF": "19.1.0.66"
         },
         "compile": {
           "lib/net5.0-windows/Syncfusion.SfMaps.WPF.dll": {}
@@ -487,10 +487,10 @@
           "lib/net5.0-windows/Syncfusion.SfMaps.WPF.dll": {}
         }
       },
-      "Syncfusion.SfNavigationDrawer.WPF/19.1.0.65": {
+      "Syncfusion.SfNavigationDrawer.WPF/19.1.0.66": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65"
+          "Syncfusion.Licensing": "19.1.0.66"
         },
         "compile": {
           "lib/net5.0-windows/Syncfusion.SfNavigationDrawer.WPF.dll": {}
@@ -499,10 +499,10 @@
           "lib/net5.0-windows/Syncfusion.SfNavigationDrawer.WPF.dll": {}
         }
       },
-      "Syncfusion.SfSkinManager.WPF/19.1.0.65": {
+      "Syncfusion.SfSkinManager.WPF/19.1.0.66": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65"
+          "Syncfusion.Licensing": "19.1.0.66"
         },
         "compile": {
           "lib/net5.0-windows/Syncfusion.SfSkinManager.WPF.dll": {}
@@ -511,10 +511,10 @@
           "lib/net5.0-windows/Syncfusion.SfSkinManager.WPF.dll": {}
         }
       },
-      "Syncfusion.Shared.WPF/19.1.0.65": {
+      "Syncfusion.Shared.WPF/19.1.0.66": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65"
+          "Syncfusion.Licensing": "19.1.0.66"
         },
         "compile": {
           "lib/net5.0-windows/Syncfusion.Shared.WPF.dll": {}
@@ -523,11 +523,11 @@
           "lib/net5.0-windows/Syncfusion.Shared.WPF.dll": {}
         }
       },
-      "Syncfusion.Themes.Office2019Black.WPF/19.1.0.65": {
+      "Syncfusion.Themes.Office2019Black.WPF/19.1.0.66": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65",
-          "Syncfusion.SfSkinManager.WPF": "19.1.0.65"
+          "Syncfusion.Licensing": "19.1.0.66",
+          "Syncfusion.SfSkinManager.WPF": "19.1.0.66"
         },
         "compile": {
           "lib/net5.0-windows/Syncfusion.Themes.Office2019Black.WPF.dll": {}
@@ -536,11 +536,11 @@
           "lib/net5.0-windows/Syncfusion.Themes.Office2019Black.WPF.dll": {}
         }
       },
-      "Syncfusion.Tools.WPF/19.1.0.65": {
+      "Syncfusion.Tools.WPF/19.1.0.66": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.65",
-          "Syncfusion.Shared.WPF": "19.1.0.65"
+          "Syncfusion.Licensing": "19.1.0.66",
+          "Syncfusion.Shared.WPF": "19.1.0.66"
         },
         "compile": {
           "lib/net5.0-windows/Syncfusion.Tools.WPF.dll": {}
@@ -699,7 +699,7 @@
           "Google.Protobuf": "3.17.2",
           "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.6",
-          "NetCoreServer": "5.0.18",
+          "NetCoreServer": "5.1.0",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -712,6 +712,10 @@
       "Polystone.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Prism.DryIoc": "8.1.97",
+          "Syncfusion.SfNavigationDrawer.WPF": "19.1.0.66"
+        },
         "compile": {
           "bin/placeholder/Polystone.Core.dll": {}
         },
@@ -729,10 +733,10 @@
           "Polystone.Core": "1.0.0",
           "Polystone.Services": "1.0.0",
           "Polystone.Services.Interfaces": "1.0.0",
-          "Prism.Wpf": "8.0.0.1909",
-          "Syncfusion.SfChart.WPF": "19.1.0.65",
-          "Syncfusion.SfGrid.WPF": "19.1.0.65",
-          "Syncfusion.Tools.WPF": "19.1.0.65"
+          "Prism.Wpf": "8.1.97",
+          "Syncfusion.SfChart.WPF": "19.1.0.66",
+          "Syncfusion.SfGrid.WPF": "19.1.0.66",
+          "Syncfusion.Tools.WPF": "19.1.0.66"
         },
         "compile": {
           "bin/placeholder/Polystone.Modules.Account.dll": {}
@@ -752,10 +756,10 @@
           "Polystone.Core": "1.0.0",
           "Polystone.Services": "1.0.0",
           "Polystone.Services.Interfaces": "1.0.0",
-          "Prism.Wpf": "8.0.0.1909",
-          "Syncfusion.SfChart.WPF": "19.1.0.65",
-          "Syncfusion.SfGrid.WPF": "19.1.0.65",
-          "Syncfusion.Tools.WPF": "19.1.0.65"
+          "Prism.Wpf": "8.1.97",
+          "Syncfusion.SfChart.WPF": "19.1.0.66",
+          "Syncfusion.SfGrid.WPF": "19.1.0.66",
+          "Syncfusion.Tools.WPF": "19.1.0.66"
         },
         "compile": {
           "bin/placeholder/Polystone.Modules.Candy.dll": {}
@@ -774,10 +778,10 @@
           "Polystone.Core": "1.0.0",
           "Polystone.Services": "1.0.0",
           "Polystone.Services.Interfaces": "1.0.0",
-          "Prism.Wpf": "8.0.0.1909",
-          "Syncfusion.SfChart.WPF": "19.1.0.65",
-          "Syncfusion.SfGrid.WPF": "19.1.0.65",
-          "Syncfusion.Tools.WPF": "19.1.0.65"
+          "Prism.Wpf": "8.1.97",
+          "Syncfusion.SfChart.WPF": "19.1.0.66",
+          "Syncfusion.SfGrid.WPF": "19.1.0.66",
+          "Syncfusion.Tools.WPF": "19.1.0.66"
         },
         "compile": {
           "bin/placeholder/Polystone.Modules.Catch.dll": {}
@@ -797,7 +801,7 @@
           "Polystone.Services": "1.0.0",
           "Polystone.Services.Interfaces": "1.0.0",
           "Prism.Wpf": "8.1.97",
-          "Syncfusion.SfChart.WPF": "19.1.0.65"
+          "Syncfusion.SfChart.WPF": "19.1.0.66"
         },
         "compile": {
           "bin/placeholder/Polystone.Modules.Home.dll": {}
@@ -817,8 +821,8 @@
           "Polystone.Services": "1.0.0",
           "Polystone.Services.Interfaces": "1.0.0",
           "Prism.Wpf": "8.1.97",
-          "Syncfusion.SfGrid.WPF": "19.1.0.65",
-          "Syncfusion.SfMaps.WPF": "19.1.0.65"
+          "Syncfusion.SfGrid.WPF": "19.1.0.66",
+          "Syncfusion.SfMaps.WPF": "19.1.0.66"
         },
         "compile": {
           "bin/placeholder/Polystone.Modules.Map.dll": {}
@@ -1302,15 +1306,15 @@
         "tools/Install.ps1"
       ]
     },
-    "NetCoreServer/5.0.18": {
-      "sha512": "74Zbhnl7HZeNcAqeUzpCN7C6pcMBQPGg8+uthYw2a/L2xduXC4F8LFpBOPEP4ot42KVNRL/0OwR4vY8XzD/cYA==",
+    "NetCoreServer/5.1.0": {
+      "sha512": "eZZEe/nslw5MO/DL2RUHmypJruerACyYleRILJT0g6/c9BiUO2LM0RuOWiUTx/U0wBa7FrkxsyPU8/Q/M4q+EQ==",
       "type": "package",
-      "path": "netcoreserver/5.0.18",
+      "path": "netcoreserver/5.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/NetCoreServer.dll",
-        "netcoreserver.5.0.18.nupkg.sha512",
+        "netcoreserver.5.1.0.nupkg.sha512",
         "netcoreserver.nuspec"
       ]
     },
@@ -1492,10 +1496,10 @@
         "sqlitepclraw.provider.dynamic_cdecl.nuspec"
       ]
     },
-    "Syncfusion.Data.WPF/19.1.0.65": {
-      "sha512": "4rfOPzQn/3ufXc+LiGbg3yTggp5EWRjClKuy0QaV70LXqUyGl4WGmk5bH7ybjG1IXGvwh6qOxxNk98yKDF3A/g==",
+    "Syncfusion.Data.WPF/19.1.0.66": {
+      "sha512": "DU3pC2BAQGG0mZtJi3zfEApxdTj30zxUGfcfj+B8qXtD7e+/SwORz3xO6yjvc7ii/epemdpHzjFJn8JMUrJIrQ==",
       "type": "package",
-      "path": "syncfusion.data.wpf/19.1.0.65",
+      "path": "syncfusion.data.wpf/19.1.0.66",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1511,14 +1515,14 @@
         "lib/net5.0-windows/Syncfusion.Data.WPF.xml",
         "lib/netcoreapp3.1/Syncfusion.Data.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.Data.WPF.xml",
-        "syncfusion.data.wpf.19.1.0.65.nupkg.sha512",
+        "syncfusion.data.wpf.19.1.0.66.nupkg.sha512",
         "syncfusion.data.wpf.nuspec"
       ]
     },
-    "Syncfusion.Licensing/19.1.0.65": {
-      "sha512": "8EcKVkFjNawxghmLdkw/9uDdPtdlcACzNid/rWyngI5JocZaKINnufakOsULmcseHHzJgUzoCRYRXvmOH8FKaw==",
+    "Syncfusion.Licensing/19.1.0.66": {
+      "sha512": "tEmJwSDnfSfa7UizXkTDsf/fwxChpjWT4fblxz4fNLQFr4hkhzR8GZ0LQvK91JwbHCiwJQgb37zM1i7uQgZEhg==",
       "type": "package",
-      "path": "syncfusion.licensing/19.1.0.65",
+      "path": "syncfusion.licensing/19.1.0.66",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1540,14 +1544,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.19.1.0.65.nupkg.sha512",
+        "syncfusion.licensing.19.1.0.66.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.SfChart.WPF/19.1.0.65": {
-      "sha512": "oR1K8bE1+d7RVohB5fB3phmLeh8Z/jkNss353ZVSCGqsGdAiDZNP7XcQuO8BgWW5M2RV+FgzLW+JOSKuyBih+w==",
+    "Syncfusion.SfChart.WPF/19.1.0.66": {
+      "sha512": "DTxwgh5pIkEwwfFkxcw7M2pVKsbnJKOGgoZ+VZZoOJm82ow4gLhF6GZa6dTxPqxTEL1r2TypumxjteTEthhWpA==",
       "type": "package",
-      "path": "syncfusion.sfchart.wpf/19.1.0.65",
+      "path": "syncfusion.sfchart.wpf/19.1.0.66",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1576,15 +1580,15 @@
         "lib/net5.0-windows/Syncfusion.SfChart.WPF.xml",
         "lib/netcoreapp3.1/Syncfusion.SfChart.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.SfChart.WPF.xml",
-        "syncfusion.sfchart.wpf.19.1.0.65.nupkg.sha512",
+        "syncfusion.sfchart.wpf.19.1.0.66.nupkg.sha512",
         "syncfusion.sfchart.wpf.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Syncfusion.SfGrid.WPF/19.1.0.65": {
-      "sha512": "6N5g98NndV8jJMDW3kDrJbmweWh4TrwfRZv/zGupl2nUZtkWz8k6CxWuTd8CieWszkeX7x30rSYOdBR5HBwzSQ==",
+    "Syncfusion.SfGrid.WPF/19.1.0.66": {
+      "sha512": "KJPTT88/I3xrS9mH6o69gLO69gksYXzr31t/e/mRCFl3xdzFaZdRPSORjecy6KFmim9law+XEm8kyE7AVUxlRQ==",
       "type": "package",
-      "path": "syncfusion.sfgrid.wpf/19.1.0.65",
+      "path": "syncfusion.sfgrid.wpf/19.1.0.66",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1615,15 +1619,15 @@
         "lib/netcoreapp3.1/Design/Syncfusion.SfGrid.WPF.DesignTools.dll",
         "lib/netcoreapp3.1/Syncfusion.SfGrid.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.SfGrid.WPF.xml",
-        "syncfusion.sfgrid.wpf.19.1.0.65.nupkg.sha512",
+        "syncfusion.sfgrid.wpf.19.1.0.66.nupkg.sha512",
         "syncfusion.sfgrid.wpf.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Syncfusion.SfMaps.WPF/19.1.0.65": {
-      "sha512": "r2zCX6dOaRg7Dd9T2bFHEbgPcn7+pQ1EspGNQwH/2xr8UfhmaOdOWQEo/U3momSTKQ5OtJlHs2CsnJuGtmDNsA==",
+    "Syncfusion.SfMaps.WPF/19.1.0.66": {
+      "sha512": "BFw1CNF5ntX2d1xezqesvyOvZiO4D/y9ysRF5ylH7xWP6FuXjh6eCCGm8t7sFD98I2fOuUXO2CJT+rnBJJDv8g==",
       "type": "package",
-      "path": "syncfusion.sfmaps.wpf/19.1.0.65",
+      "path": "syncfusion.sfmaps.wpf/19.1.0.66",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1658,15 +1662,15 @@
         "lib/netcoreapp3.1/Design/Syncfusion.SfMaps.WPF.DesignTools.dll",
         "lib/netcoreapp3.1/Syncfusion.SfMaps.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.SfMaps.WPF.xml",
-        "syncfusion.sfmaps.wpf.19.1.0.65.nupkg.sha512",
+        "syncfusion.sfmaps.wpf.19.1.0.66.nupkg.sha512",
         "syncfusion.sfmaps.wpf.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Syncfusion.SfNavigationDrawer.WPF/19.1.0.65": {
-      "sha512": "1WkUDvMVCIkDd+N2XKKx3lZrd9OxA+GTEpAYZbcvq30jB8JVQzhZt8EWYcPCTRL2gyGXMPdRIZVkaAleZVquew==",
+    "Syncfusion.SfNavigationDrawer.WPF/19.1.0.66": {
+      "sha512": "9dJFgGGCpBfDg835eN4qc42GVfVJ1JrTy1yI8B0Rv9hp5Hb4bCwaHMAO4CcVtQwkJtQUn/sZi6PS9y/oxt8gaw==",
       "type": "package",
-      "path": "syncfusion.sfnavigationdrawer.wpf/19.1.0.65",
+      "path": "syncfusion.sfnavigationdrawer.wpf/19.1.0.66",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1701,15 +1705,15 @@
         "lib/netcoreapp3.1/Design/Syncfusion.SfNavigationDrawer.WPF.DesignTools.dll",
         "lib/netcoreapp3.1/Syncfusion.SfNavigationDrawer.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.SfNavigationDrawer.WPF.xml",
-        "syncfusion.sfnavigationdrawer.wpf.19.1.0.65.nupkg.sha512",
+        "syncfusion.sfnavigationdrawer.wpf.19.1.0.66.nupkg.sha512",
         "syncfusion.sfnavigationdrawer.wpf.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Syncfusion.SfSkinManager.WPF/19.1.0.65": {
-      "sha512": "SFL6jnFsX13QNNl+Qu86Kv2WaRfoHE4GrkkrdlWzNVhLb5nq0iaX9E05Bo3gIKP1gKQkuXnnF2faBlCLwDh4ew==",
+    "Syncfusion.SfSkinManager.WPF/19.1.0.66": {
+      "sha512": "4H8Mz+qKQ+PnP7/e9A0sPBb+Rzit6yQddLfZJDBmn0PYqrhs+2zrchQ2wkf0MpIme7MRmcWCVnd/dCghseE7PA==",
       "type": "package",
-      "path": "syncfusion.sfskinmanager.wpf/19.1.0.65",
+      "path": "syncfusion.sfskinmanager.wpf/19.1.0.66",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1725,14 +1729,14 @@
         "lib/net5.0-windows/Syncfusion.SfSkinManager.WPF.xml",
         "lib/netcoreapp3.1/Syncfusion.SfSkinManager.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.SfSkinManager.WPF.xml",
-        "syncfusion.sfskinmanager.wpf.19.1.0.65.nupkg.sha512",
+        "syncfusion.sfskinmanager.wpf.19.1.0.66.nupkg.sha512",
         "syncfusion.sfskinmanager.wpf.nuspec"
       ]
     },
-    "Syncfusion.Shared.WPF/19.1.0.65": {
-      "sha512": "20wGGIM2pMOXzwLsGj/JzsS33Gs9aHEu00NRtwmVsJpnXQiQLV+gQfhKmccX3ancjkWeLY7qKOIehM8XrYcHew==",
+    "Syncfusion.Shared.WPF/19.1.0.66": {
+      "sha512": "wNo8HsPx/EerSapNIZ4Ue+quKL0n7myfP4if2yN4Myqt0cv6K8AngLE2KIIRClEAiQiAmkvc/wmZ9kyske8T+Q==",
       "type": "package",
-      "path": "syncfusion.shared.wpf/19.1.0.65",
+      "path": "syncfusion.shared.wpf/19.1.0.66",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1778,15 +1782,15 @@
         "lib/netcoreapp3.1/Design/Syncfusion.Shared.WPF.DesignTools.dll",
         "lib/netcoreapp3.1/Syncfusion.Shared.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.Shared.WPF.xml",
-        "syncfusion.shared.wpf.19.1.0.65.nupkg.sha512",
+        "syncfusion.shared.wpf.19.1.0.66.nupkg.sha512",
         "syncfusion.shared.wpf.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
-    "Syncfusion.Themes.Office2019Black.WPF/19.1.0.65": {
-      "sha512": "Up60GHKTrnUqny4mJHL/TIKVwWV9WWJc9Hn7SGtwv8R41TFmwuHMw9GGlRAoFlBeWqGoNRifDfCw7iZAlwVAVQ==",
+    "Syncfusion.Themes.Office2019Black.WPF/19.1.0.66": {
+      "sha512": "jCupaK+bFyVS+CJSc5KJoryF3wPGctO7n7lmbbCo4bG9hQLKBDoMXjVr2uLD9RPVHcOhGoASn6k1XpW35Q5MEQ==",
       "type": "package",
-      "path": "syncfusion.themes.office2019black.wpf/19.1.0.65",
+      "path": "syncfusion.themes.office2019black.wpf/19.1.0.66",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1802,14 +1806,14 @@
         "lib/net5.0-windows/Syncfusion.Themes.Office2019Black.WPF.xml",
         "lib/netcoreapp3.1/Syncfusion.Themes.Office2019Black.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.Themes.Office2019Black.WPF.xml",
-        "syncfusion.themes.office2019black.wpf.19.1.0.65.nupkg.sha512",
+        "syncfusion.themes.office2019black.wpf.19.1.0.66.nupkg.sha512",
         "syncfusion.themes.office2019black.wpf.nuspec"
       ]
     },
-    "Syncfusion.Tools.WPF/19.1.0.65": {
-      "sha512": "3dRw75XNI4kxM4lnu8o5BqIgvOqVvQETMtGfTip+yzIga1dZJtVROJTrHxeUTtY4x+h5QXPniMwKH2x3JIx+Kw==",
+    "Syncfusion.Tools.WPF/19.1.0.66": {
+      "sha512": "VUmOf4HU8wyhdpbd7U8bnDg5ikGb5XFrp0Lz+6EwvKhhjX5RZoyWm5IqczWjiam4QVwK1DWRPnanZ6wpOrYtDg==",
       "type": "package",
-      "path": "syncfusion.tools.wpf/19.1.0.65",
+      "path": "syncfusion.tools.wpf/19.1.0.66",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -1855,7 +1859,7 @@
         "lib/netcoreapp3.1/Design/Syncfusion.Tools.WPF.DesignTools.dll",
         "lib/netcoreapp3.1/Syncfusion.Tools.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.Tools.WPF.xml",
-        "syncfusion.tools.wpf.19.1.0.65.nupkg.sha512",
+        "syncfusion.tools.wpf.19.1.0.66.nupkg.sha512",
         "syncfusion.tools.wpf.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
@@ -2650,12 +2654,12 @@
       "Polystone.Services >= 1.0.0",
       "Polystone.Services.Interfaces >= 1.0.0",
       "Prism.DryIoc >= 8.1.97",
-      "Syncfusion.SfGrid.WPF >= 19.1.0.65",
-      "Syncfusion.SfNavigationDrawer.WPF >= 19.1.0.65",
-      "Syncfusion.SfSkinManager.WPF >= 19.1.0.65",
-      "Syncfusion.Shared.WPF >= 19.1.0.65",
-      "Syncfusion.Themes.Office2019Black.WPF >= 19.1.0.65",
-      "Syncfusion.Tools.WPF >= 19.1.0.65"
+      "Syncfusion.SfGrid.WPF >= 19.1.0.66",
+      "Syncfusion.SfNavigationDrawer.WPF >= 19.1.0.66",
+      "Syncfusion.SfSkinManager.WPF >= 19.1.0.66",
+      "Syncfusion.Shared.WPF >= 19.1.0.66",
+      "Syncfusion.Themes.Office2019Black.WPF >= 19.1.0.66",
+      "Syncfusion.Tools.WPF >= 19.1.0.66"
     ]
   },
   "packageFolders": {
@@ -2736,27 +2740,27 @@
           },
           "Syncfusion.SfGrid.WPF": {
             "target": "Package",
-            "version": "[19.1.0.65, )"
+            "version": "[19.1.0.66, )"
           },
           "Syncfusion.SfNavigationDrawer.WPF": {
             "target": "Package",
-            "version": "[19.1.0.65, )"
+            "version": "[19.1.0.66, )"
           },
           "Syncfusion.SfSkinManager.WPF": {
             "target": "Package",
-            "version": "[19.1.0.65, )"
+            "version": "[19.1.0.66, )"
           },
           "Syncfusion.Shared.WPF": {
             "target": "Package",
-            "version": "[19.1.0.65, )"
+            "version": "[19.1.0.66, )"
           },
           "Syncfusion.Themes.Office2019Black.WPF": {
             "target": "Package",
-            "version": "[19.1.0.65, )"
+            "version": "[19.1.0.66, )"
           },
           "Syncfusion.Tools.WPF": {
             "target": "Package",
-            "version": "[19.1.0.65, )"
+            "version": "[19.1.0.66, )"
           }
         },
         "imports": [

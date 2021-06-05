@@ -6,7 +6,7 @@
         prism:ViewModelLocator.AutoWireViewModel="True"
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         syncfusion:SfSkinManager.Theme="{syncfusion:SkinManagerExtension ThemeName=Office2019Black}"
-        xmlns:core="clr-namespace:Polystone.Core;assembly=Polystone.Core"
+        xmlns:core="clr-namespace:Polystone.Core.Constants;assembly=Polystone.Core"
         Title="Polystone" ShowIcon="False" Icon="../App.png" ShowTitle="false" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowState="Maximized" FontWeight="Normal">
     <syncfusion:ChromelessWindow.Resources>
         <Style x:Key="NavigationItemPathStyle" TargetType="Path">

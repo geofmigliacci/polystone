@@ -226,7 +226,7 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "NetCoreServer/5.0.18": {
+      "NetCoreServer/5.1.0": {
         "type": "package",
         "compile": {
           "lib/net5.0/NetCoreServer.dll": {}
@@ -390,7 +390,7 @@
           "Google.Protobuf": "3.17.2",
           "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.EntityFrameworkCore.Sqlite": "5.0.6",
-          "NetCoreServer": "5.0.18",
+          "NetCoreServer": "5.1.0",
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
@@ -759,15 +759,15 @@
         "version.txt"
       ]
     },
-    "NetCoreServer/5.0.18": {
-      "sha512": "74Zbhnl7HZeNcAqeUzpCN7C6pcMBQPGg8+uthYw2a/L2xduXC4F8LFpBOPEP4ot42KVNRL/0OwR4vY8XzD/cYA==",
+    "NetCoreServer/5.1.0": {
+      "sha512": "eZZEe/nslw5MO/DL2RUHmypJruerACyYleRILJT0g6/c9BiUO2LM0RuOWiUTx/U0wBa7FrkxsyPU8/Q/M4q+EQ==",
       "type": "package",
-      "path": "netcoreserver/5.0.18",
+      "path": "netcoreserver/5.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net5.0/NetCoreServer.dll",
-        "netcoreserver.5.0.18.nupkg.sha512",
+        "netcoreserver.5.1.0.nupkg.sha512",
         "netcoreserver.nuspec"
       ]
     },

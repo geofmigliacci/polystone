@@ -1,4 +1,4 @@
-﻿namespace Polystone.Core
+﻿namespace Polystone.Core.Constants
 {
     public static class RegionNames
     {

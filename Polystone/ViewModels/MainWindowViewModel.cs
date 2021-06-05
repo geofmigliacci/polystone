@@ -7,7 +7,7 @@ using System.Windows.Media;
 using System.Windows.Shapes;
 using Microsoft.EntityFrameworkCore;
 using Polystone.Business;
-using Polystone.Core;
+using Polystone.Core.Constants;
 using Polystone.Services.Interfaces;
 using Prism.Commands;
 using Prism.Mvvm;

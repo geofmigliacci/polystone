@@ -72,7 +72,7 @@
             },
             "NetCoreServer": {
               "target": "Package",
-              "version": "[5.0.18, )"
+              "version": "[5.1.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

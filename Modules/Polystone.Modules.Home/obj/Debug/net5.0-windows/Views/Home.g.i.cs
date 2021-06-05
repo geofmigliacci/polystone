@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Prism.DryIoc;
 using Prism.Interactivity;
 using Prism.Ioc;
 using Prism.Mvvm;
@@ -16,6 +17,7 @@ using Prism.Regions;
 using Prism.Regions.Behaviors;
 using Prism.Services.Dialogs;
 using Syncfusion.UI.Xaml.Charts;
+using Syncfusion.UI.Xaml.NavigationDrawer;
 using System;
 using System.Diagnostics;
 using System.Windows;
@@ -59,7 +61,7 @@ namespace Polystone.Modules.Home.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Polystone.Modules.Home;component/views/home.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Polystone.Modules.Home;V1.0.0.0;component/views/home.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\Home.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

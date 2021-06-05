@@ -1,4 +1,4 @@
-﻿using Polystone.Core;
+﻿using Polystone.Core.Constants;
 using Polystone.Modules.Account.Views;
 using Polystone.Services;
 using Polystone.Services.Interfaces;

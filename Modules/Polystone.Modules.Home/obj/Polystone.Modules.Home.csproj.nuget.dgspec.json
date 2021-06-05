@@ -62,7 +62,7 @@
             },
             "Syncfusion.SfChart.WPF": {
               "target": "Package",
-              "version": "[19.1.0.65, )"
+              "version": "[19.1.0.66, )"
             }
           },
           "imports": [
@@ -155,7 +155,7 @@
             },
             "NetCoreServer": {
               "target": "Package",
-              "version": "[5.0.18, )"
+              "version": "[5.1.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -222,6 +222,16 @@
       "frameworks": {
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
+          "dependencies": {
+            "Prism.DryIoc": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            },
+            "Syncfusion.SfNavigationDrawer.WPF": {
+              "target": "Package",
+              "version": "[19.1.0.66, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
