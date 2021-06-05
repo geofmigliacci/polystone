@@ -19,11 +19,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore --configuration Release --output %GITHUB_REF%
+      run: dotnet build --no-restore --configuration Release --output release
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Zip
-      run: tar -a -c -f polystone.zip build
+      run: tar -a -c -f %GITHUB_REF%.zip release
     - name: Release
       uses: ncipollo/release-action@v1
       with:
