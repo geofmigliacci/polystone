@@ -25,8 +25,11 @@ jobs:
       run: dotnet build --no-restore --configuration Release --output ./polystone-build
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Zip
+      run: tar -a -c -f polystone-build.zip ./polystone-build
     - name: Release
-      uses: thedoctor0/zip-release@master
+      uses: ncipollo/release-action@v1
       with:
-        path: './polystone-build'
-        filename: 'polystone.zip'
+        tag: "latest"
+        artifacts: "polystone-build.zip"
+        token: ${{ secrets.GITHUB_TOKEN }}
