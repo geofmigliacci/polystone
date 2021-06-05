@@ -21,13 +21,13 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore --configuration Release --output 'polystone-${{ env.GITHUB_REF_SLUG }}'
+      run: dotnet build --no-restore --configuration Release -p:Version=${{ env.GITHUB_REF_SLUG }} --output polystone-${{ env.GITHUB_REF_SLUG }}
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Zip
-      run: tar -a -c -f 'polystone-${{ env.GITHUB_REF_SLUG }}.zip' 'polystone-${{ env.GITHUB_REF_SLUG }}'
+      run: tar -a -c -f polystone-${{ env.GITHUB_REF_SLUG }}.zip polystone-${{ env.GITHUB_REF_SLUG }}
     - name: Release
       uses: ncipollo/release-action@v1
       with:
-        artifact: 'polystone-${{ env.GITHUB_REF_SLUG }}.zip'
+        artifact: polystone-${{ env.GITHUB_REF_SLUG }}.zip
         token: ${{ secrets.GITHUB_TOKEN }}
