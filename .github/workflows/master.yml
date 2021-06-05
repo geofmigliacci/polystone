@@ -1,9 +1,11 @@
 name: .NET
 
-on:  
+on:
   push:
-    tags:
-      - '*.*.*'
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened]
 
 jobs:
   build:
