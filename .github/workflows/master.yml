@@ -22,12 +22,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore --configuration Release --output ./build
+      run: dotnet build --no-restore --configuration Release --output ./polystone-build
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Release
-      uses: ncipollo/release-action@v1
+      uses: thedoctor0/zip-release@master
       with:
-        tag: "latest"
-        artifacts: "./build/*"
-        token: ${{ secrets.GITHUB_TOKEN }}
+        path: './polystone-build'
+        filename: 'polystone.zip'
