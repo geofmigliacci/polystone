@@ -22,10 +22,12 @@ jobs:
       run: dotnet build --no-restore --configuration Release --output release
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Branch name
+      run: echo '${{ env.CURRENT_BRANCH }}'
     - name: Zip
-      run: tar -a -c -f $env:GITHUB_REF.zip release
+      run: tar -a -c -f ${{ env.CURRENT_BRANCH }}.zip release
     - name: Release
       uses: ncipollo/release-action@v1
       with:
-        artifact: '$env:GITHUB_REF.zip'
+        artifact: '${{ env.CURRENT_BRANCH }}.zip'
         token: ${{ secrets.GITHUB_TOKEN }}
