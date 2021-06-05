@@ -22,12 +22,11 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore --configuration Release --output /build
+      run: dotnet build --no-restore --configuration Release --output ./build
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Release
-      uses: fnkr/github-action-ghr@v1
-      env:
-        GHR_COMPRESS: zip
-        GHR_PATH: /build
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "./build/*"
+        token: ${{ secrets.GITHUB_TOKEN }}
