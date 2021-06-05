@@ -23,9 +23,9 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Zip
-      run: tar -a -c -f %GITHUB_REF%.zip release
+      run: tar -a -c -f $env:GITHUB_REF.zip release
     - name: Release
       uses: ncipollo/release-action@v1
       with:
-        artifact: '%GITHUB_REF%.zip'
+        artifact: '$env:GITHUB_REF.zip'
         token: ${{ secrets.GITHUB_TOKEN }}
