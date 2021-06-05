@@ -28,5 +28,6 @@ jobs:
     - name: Release
       uses: ncipollo/release-action@v1
       with:
+        tag: "latest"
         artifacts: "./build/*"
         token: ${{ secrets.GITHUB_TOKEN }}
