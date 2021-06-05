@@ -23,11 +23,11 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Branch name
-      run: echo '${{ env.CURRENT_BRANCH }}'
+      run: echo '${{ env.GITHUB_REF }}'
     - name: Zip
-      run: tar -a -c -f ${{ env.CURRENT_BRANCH }}.zip release
+      run: tar -a -c -f ${{ env.GITHUB_REF }}.zip release
     - name: Release
       uses: ncipollo/release-action@v1
       with:
-        artifact: '${{ env.CURRENT_BRANCH }}.zip'
-        token: ${{ secrets.GITHUB_TOKEN }}
+        artifact: '${{ env.GITHUB_REF }}.zip'
+        token: ${{ secrets.GITHUB_REF }}
