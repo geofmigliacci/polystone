@@ -1,16 +1,13 @@
 name: .NET
 
-on:
+on:  
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    tags:
+      - '*.*.*'
 
 jobs:
   build:
-
     runs-on: windows-2019
-
     steps:
     - uses: actions/checkout@v2
       with:
@@ -22,14 +19,13 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore --configuration Release --output ./polystone-build
+      run: dotnet build -p:Version=${GITHUB_REF:10} --no-restore --configuration Release --output build
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Zip
-      run: tar -a -c -f polystone-build.zip ./polystone-build
+      run: tar -a -c -f polystone.zip build
     - name: Release
       uses: ncipollo/release-action@v1
       with:
-        tag: "latest"
-        artifacts: "polystone-build.zip"
+        artifacts: 'release-${GITHUB_REF:10}.zip'
         token: ${{ secrets.GITHUB_TOKEN }}
