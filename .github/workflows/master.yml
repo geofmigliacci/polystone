@@ -19,7 +19,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build -p:Version=$GITHUB_REF --no-restore --configuration Release --output build
+      run: dotnet build -p:Version=%GITHUB_REF% --no-restore --configuration Release --output build
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Zip
@@ -27,5 +27,5 @@ jobs:
     - name: Release
       uses: ncipollo/release-action@v1
       with:
-        artifacts: 'release-$GITHUB_REF.zip'
+        artifacts: 'release-%GITHUB_REF%.zip'
         token: ${{ secrets.GITHUB_TOKEN }}
