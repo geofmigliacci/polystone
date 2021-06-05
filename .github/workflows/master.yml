@@ -22,6 +22,7 @@ jobs:
       run: dotnet build --no-restore --configuration Release --output release
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - uses: rlespinasse/github-slug-action@v3.x
     - name: Zip
       run: tar -a -c -f '${{ env.GITHUB_REF_SLUG }}.zip' 'release'
     - name: Release
