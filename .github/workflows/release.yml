@@ -1,4 +1,4 @@
-name: .NET
+name: Release
 
 on:
   push:
@@ -16,17 +16,18 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
+    - name: Slugs
+      uses: rlespinasse/github-slug-action@v3.x
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore --configuration Release --output release
+      run: dotnet build --no-restore --configuration Release --output 'polystone-${{ env.GITHUB_REF_SLUG }}'
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - uses: rlespinasse/github-slug-action@v3.x
     - name: Zip
-      run: tar -a -c -f '${{ env.GITHUB_REF_SLUG }}.zip' 'release'
+      run: tar -a -c -f 'polystone-${{ env.GITHUB_REF_SLUG }}.zip' 'polystone-${{ env.GITHUB_REF_SLUG }}'
     - name: Release
       uses: ncipollo/release-action@v1
       with:
-        artifact: '${{ env.GITHUB_REF_SLUG }}.zip'
+        artifact: 'polystone-${{ env.GITHUB_REF_SLUG }}.zip'
         token: ${{ secrets.GITHUB_TOKEN }}
