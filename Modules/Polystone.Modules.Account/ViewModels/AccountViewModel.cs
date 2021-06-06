@@ -28,8 +28,8 @@ namespace Polystone.Modules.Account.ViewModels
 
     public class AccountViewModel : BindableBase, INavigationAware
     {
-        private IPolystoneContextService _polystoneContextService;
-        private IPolystoneAccountService _polystoneAccountService;
+        private readonly IPolystoneContextService _polystoneContextService;
+        private readonly IPolystoneAccountService _polystoneAccountService;
 
         public ObservableCollection<DataTableAccount> DataTableAccounts { get; set; }
         public DelegateCommand<List<object>> SelectionChangedCommand { get; set; }
@@ -63,7 +63,7 @@ namespace Polystone.Modules.Account.ViewModels
                 })
             );
 
-            if(DataTableAccounts.Count() == 1)
+            if(DataTableAccounts.Count == 1)
             {
                 _polystoneAccountService.SetAccount(
                    _polystoneContextService.GetPolystoneContext().Accounts.AsNoTracking().FirstOrDefault(a_ =>
@@ -125,6 +125,7 @@ namespace Polystone.Modules.Account.ViewModels
 
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
+            // Currently not necessary
         }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
@@ -134,7 +135,7 @@ namespace Polystone.Modules.Account.ViewModels
 
         public void OnNavigatedFrom(NavigationContext navigationContext)
         {
-
+            // Currently not necessary
         }
     }
 }

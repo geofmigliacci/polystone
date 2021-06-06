@@ -61,7 +61,7 @@ namespace Polystone.Modules.Home.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Polystone.Modules.Home;V1.0.0.0;component/views/home.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Polystone.Modules.Home;component/views/home.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\Home.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

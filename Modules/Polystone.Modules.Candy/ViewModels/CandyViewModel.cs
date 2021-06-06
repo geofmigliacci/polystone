@@ -21,8 +21,8 @@ namespace Polystone.Modules.Candy.ViewModels
 
     public class CandyViewModel : BindableBase, INavigationAware
     {
-        private IPolystoneAccountService _polystoneAccountService;
-        private IPolystoneContextService _polystoneContextService;
+        private readonly IPolystoneAccountService _polystoneAccountService;
+        private readonly IPolystoneContextService _polystoneContextService;
         
         public Account CurrentAccount { get; set; }
 
@@ -51,7 +51,7 @@ namespace Polystone.Modules.Candy.ViewModels
 
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
-
+            // Currently not necessary
         }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
@@ -61,7 +61,7 @@ namespace Polystone.Modules.Candy.ViewModels
 
         public void OnNavigatedFrom(NavigationContext navigationContext)
         {
-
+            // Currently not necessary
         }
     }
 }

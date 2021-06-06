@@ -5,7 +5,7 @@ namespace Polystone.Services
 {
     public class PolystoneContextService : IPolystoneContextService
     {
-        private PolystoneContext _polystoneContext = new PolystoneContext();
+        private readonly PolystoneContext _polystoneContext = new PolystoneContext();
 
         public PolystoneContext GetPolystoneContext()
         {

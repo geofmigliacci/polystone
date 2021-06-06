@@ -12,16 +12,9 @@ namespace Polystone.Modules.Map
 {
     public class MapModule : IModule
     {
-        private readonly IRegionManager _regionManager;
-
-        public MapModule(IRegionManager regionManager)
-        {
-            _regionManager = regionManager;
-        }
-
         public void OnInitialized(IContainerProvider containerProvider)
         {
-
+            // Currently not necessary
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)

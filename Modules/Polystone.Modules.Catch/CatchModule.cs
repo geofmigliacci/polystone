@@ -11,7 +11,7 @@ namespace Polystone.Modules.Catch
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
-
+            // Currently not necessary
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)

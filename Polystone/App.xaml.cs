@@ -46,11 +46,6 @@ namespace Polystone
             moduleCatalog.AddModule<CatchModule>();
             moduleCatalog.AddModule<CandyModule>();
         }
-
-        protected override void InitializeModules()
-        {
-            base.InitializeModules();
-        }
         
         protected override void ConfigureRegionAdapterMappings(RegionAdapterMappings regionAdapterMappings)
         {

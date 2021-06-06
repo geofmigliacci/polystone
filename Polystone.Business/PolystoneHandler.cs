@@ -30,78 +30,72 @@ namespace Polystone.Business
                     Account = account
                 });
                 _polystoneContext.SaveChanges();
-                return;
-            }
-
-            if (catchPokemonOutProto.Status == CatchPokemonOutProto.Types.Status.CatchFlee)
-            {
-                return;
             }
         }
 
-        static void HandleGymFeedPokemon(Account account, Payload payload)
-        {
-            GymFeedPokemonOutProto gymFeedPokemonOut = GymFeedPokemonOutProto.Parser.ParseFrom(
-                payload.ConvertFromBase64String()
-            );
+        //static void HandleGymFeedPokemon(Account account, Payload payload)
+        //{
+        //    GymFeedPokemonOutProto gymFeedPokemonOut = GymFeedPokemonOutProto.Parser.ParseFrom(
+        //        payload.ConvertFromBase64String()
+        //    );
 
-        }
+        //}
 
-        static void HandleCompleteQuest(Account account, Payload payload)
-        {
-            CompleteQuestOutProto completeQuestOut = CompleteQuestOutProto.Parser.ParseFrom(
-                payload.ConvertFromBase64String()
-            );
+        //static void HandleCompleteQuest(Account account, Payload payload)
+        //{
+        //    CompleteQuestOutProto completeQuestOut = CompleteQuestOutProto.Parser.ParseFrom(
+        //        payload.ConvertFromBase64String()
+        //    );
 
-        }
+        //}
 
-        static void HandleCompleteQuestStampCard(Account account, Payload payload)
-        {
-            CompleteQuestStampCardOutProto completeQuestStampCardOut = CompleteQuestStampCardOutProto.Parser.ParseFrom(
-                payload.ConvertFromBase64String()
-            );
+        //static void HandleCompleteQuestStampCard(Account account, Payload payload)
+        //{
+        //    CompleteQuestStampCardOutProto completeQuestStampCardOut = CompleteQuestStampCardOutProto.Parser.ParseFrom(
+        //        payload.ConvertFromBase64String()
+        //    );
 
-        }
+        //}
 
-        static void HandleGetHatchedEggs(Account account, Payload payload)
-        {
-            GetHatchedEggsOutProto getHatchedEggsOut = GetHatchedEggsOutProto.Parser.ParseFrom(
-                payload.ConvertFromBase64String()
-            );
+        //static void HandleGetHatchedEggs(Account account, Payload payload)
+        //{
+        //    GetHatchedEggsOutProto getHatchedEggsOut = GetHatchedEggsOutProto.Parser.ParseFrom(
+        //        payload.ConvertFromBase64String()
+        //    );
 
-        }
+        //}
 
-        static void HandleFortSearch(Account account, Payload payload)
-        {
-            FortSearchOutProto fortSearchOut = FortSearchOutProto.Parser.ParseFrom(
-                payload.ConvertFromBase64String()
-            );
+        //static void HandleFortSearch(Account account, Payload payload)
+        //{
+        //    FortSearchOutProto fortSearchOut = FortSearchOutProto.Parser.ParseFrom(
+        //        payload.ConvertFromBase64String()
+        //    );
 
-        }
+        //}
 
-        static void HandleEvolvePokemon(Account account, Payload payload)
-        {
-            EvolvePokemonOutProto evolvePokemonOut = EvolvePokemonOutProto.Parser.ParseFrom(
-                payload.ConvertFromBase64String()
-            );
+        //static void HandleEvolvePokemon(Account account, Payload payload)
+        //{
+        //    EvolvePokemonOutProto evolvePokemonOut = EvolvePokemonOutProto.Parser.ParseFrom(
+        //        payload.ConvertFromBase64String()
+        //    );
 
-        }
+        //}
 
-        static void HandleInvasionBattleUpdate(Account account, Payload payload)
-        {
-            UpdateInvasionBattleOutProto updateInvasionBattleOut = UpdateInvasionBattleOutProto.Parser.ParseFrom(
-                payload.ConvertFromBase64String()
-            );
+        //static void HandleInvasionBattleUpdate(Account account, Payload payload)
+        //{
+        //    UpdateInvasionBattleOutProto updateInvasionBattleOut = UpdateInvasionBattleOutProto.Parser.ParseFrom(
+        //        payload.ConvertFromBase64String()
+        //    );
 
-        }
+        //}
 
-        static void HandleAttackRaid(Account account, Payload payload)
-        {
-            AttackRaidBattleOutProto attackRaidBattleOut = AttackRaidBattleOutProto.Parser.ParseFrom(
-                payload.ConvertFromBase64String()
-            );
+        //static void HandleAttackRaid(Account account, Payload payload)
+        //{
+        //    AttackRaidBattleOutProto attackRaidBattleOut = AttackRaidBattleOutProto.Parser.ParseFrom(
+        //        payload.ConvertFromBase64String()
+        //    );
 
-        }
+        //}
 
         static void HandleGetPlayer(Account account, Payload payload)
         {
@@ -151,7 +145,7 @@ namespace Polystone.Business
                 return;
             }
 
-            if(getHoloholoInventoryOut.InventoryDelta?.InventoryItem?.Count() == 0)
+            if(getHoloholoInventoryOut.InventoryDelta?.InventoryItem?.Count == 0)
             {
                 return;
             }
@@ -255,30 +249,30 @@ namespace Polystone.Business
                 case Method.CatchPokemon:
                     HandleCatchPokemon(account, payload);
                     break;
-                case Method.GymFeedPokemon:
-                    HandleGymFeedPokemon(account, payload);
-                    break;
-                case Method.CompleteQuest:
-                    HandleCompleteQuest(account, payload);
-                    break;
-                case Method.CompleteQuestStampCard:
-                    HandleCompleteQuestStampCard(account, payload);
-                    break;
-                case Method.GetHatchedEggs:
-                    HandleGetHatchedEggs(account, payload);
-                    break;
-                case Method.FortSearch:
-                    HandleFortSearch(account, payload);
-                    break;
-                case Method.EvolvePokemon:
-                    HandleEvolvePokemon(account, payload);
-                    break;
-                case Method.InvasionBattleUpdate:
-                    HandleInvasionBattleUpdate(account, payload);
-                    break;
-                case Method.AttackRaid:
-                    HandleAttackRaid(account, payload);
-                    break;
+                //case Method.GymFeedPokemon:
+                //    HandleGymFeedPokemon(account, payload);
+                //    break;
+                //case Method.CompleteQuest:
+                //    HandleCompleteQuest(account, payload);
+                //    break;
+                //case Method.CompleteQuestStampCard:
+                //    HandleCompleteQuestStampCard(account, payload);
+                //    break;
+                //case Method.GetHatchedEggs:
+                //    HandleGetHatchedEggs(account, payload);
+                //    break;
+                //case Method.FortSearch:
+                //    HandleFortSearch(account, payload);
+                //    break;
+                //case Method.EvolvePokemon:
+                //    HandleEvolvePokemon(account, payload);
+                //    break;
+                //case Method.InvasionBattleUpdate:
+                //    HandleInvasionBattleUpdate(account, payload);
+                //    break;
+                //case Method.AttackRaid:
+                //    HandleAttackRaid(account, payload);
+                //    break;
                 case Method.GetPlayer:
                     HandleGetPlayer(account, payload);
                     break;

@@ -55,7 +55,6 @@ namespace Polystone.Business
     {
         private bool _reading = false;
         private StringBuilder _currentMessage = new StringBuilder();
-        private readonly Regex _multipleContent = new Regex(@"(\{""payloads"":.*?,""key"":""[a-z0-9]+""\})", RegexOptions.IgnoreCase);
 
         public PolystoneSession(TcpServer server) : base(server) { }
 
@@ -67,7 +66,7 @@ namespace Polystone.Business
 
         protected override void OnReceived(byte[] buffer, long offset, long size)
         {
-            string receiveMessage = Encoding.UTF8.GetString(buffer, (int)offset, (int)size).Replace("\n", string.Empty).Replace("\r", string.Empty).Trim();
+            string receiveMessage = Encoding.UTF8.GetString(buffer, (int)offset, (int)size).Trim();
 
             if (!_reading && receiveMessage.StartsWith("{"))
             {
@@ -98,7 +97,7 @@ namespace Polystone.Business
                 }
                 catch (Exception)
                 {
-                    foreach (string messageString in _multipleContent.Matches(_currentMessage.ToString()).Cast<Match>().Select(match => match.Value))
+                    foreach (string messageString in _currentMessage.ToString().Split("\n"))
                     {
                         Content content = JsonConvert.DeserializeObject<Content>(messageString);
                         foreach (Payload payload in content.Payloads)

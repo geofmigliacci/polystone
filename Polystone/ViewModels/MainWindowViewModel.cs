@@ -18,26 +18,23 @@ namespace Polystone.ViewModels
     public class MainWindowViewModel : BindableBase
     {
         private readonly IRegionManager _regionManager;
-        private readonly IPolystoneContextService _polystoneContextService;
         private readonly IPolystoneAccountService _polystoneAccountService;
-        private readonly IPolystoneServerService _polystoneServerService;
+
         public ObservableCollection<NavigationItem> Items { get; set; }
         public DelegateCommand<Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem> ItemClickedCommand { get; private set; }
 
         public MainWindowViewModel(
             IRegionManager regionManager,
-            IPolystoneContextService polystoneDatabaseService,
+            IPolystoneContextService polystoneContextService,
             IPolystoneAccountService polystoneAccountService,
             IPolystoneServerService polystoneServerService
         )
         {
             _regionManager = regionManager;
             _polystoneAccountService = polystoneAccountService;
-            _polystoneContextService = polystoneDatabaseService;
-            _polystoneServerService = polystoneServerService;
 
-            _polystoneContextService.GetPolystoneContext().Database.EnsureCreated();
-            _polystoneServerService.Start(9838);
+            polystoneContextService.GetPolystoneContext().Database.EnsureCreated();
+            polystoneServerService.Start(9838);
 
             ItemClickedCommand = new DelegateCommand<Syncfusion.UI.Xaml.NavigationDrawer.NavigationItem>(OnItemClicked);
 
@@ -102,14 +99,14 @@ namespace Polystone.ViewModels
             ExecuteNavigateCommand(navigationItem.NavigationPath);
         }
 
-        public void ExecuteNavigateCommand(string navigationpath)
+        public void ExecuteNavigateCommand(string navigationPath)
         {
-            if (string.IsNullOrEmpty(navigationpath))
+            if (string.IsNullOrEmpty(navigationPath))
             {
-                throw new ArgumentNullException();
+                throw new ArgumentNullException("The navigationPath is null.");
             }
 
-            _regionManager.RequestNavigate(RegionNames.ContentRegion, navigationpath);
+            _regionManager.RequestNavigate(RegionNames.ContentRegion, navigationPath);
         }
     }
 }

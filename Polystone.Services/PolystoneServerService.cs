@@ -22,7 +22,7 @@ namespace Polystone.Services
         {
             if(_polystoneServer == null)
             {
-                throw new Exception("PolysoneServer not started!");
+                throw new ArgumentNullException("PolysoneServer not started!");
             }
             return _polystoneServer;
         }

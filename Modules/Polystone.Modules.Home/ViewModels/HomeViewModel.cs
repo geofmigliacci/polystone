@@ -24,8 +24,9 @@ namespace Polystone.Modules.Home.ViewModels
 
     public class HomeViewModel : BindableBase, INavigationAware
     {
-        private IPolystoneContextService _polystoneContextService;
-        private IPolystoneAccountService _polystoneAccountService;
+        private readonly IPolystoneContextService _polystoneContextService;
+        private readonly IPolystoneAccountService _polystoneAccountService;
+
         public Account CurrentAccount { get; set; }
 
         public ObservableCollection<AreaChartModel> AccountHistoryDataPoints { get; set; }
@@ -48,12 +49,6 @@ namespace Polystone.Modules.Home.ViewModels
                 ah_.Stardust > 0
             );
 
-            IEnumerable<AccountCatch> accountCatches = _polystoneContextService.GetPolystoneContext().Accounts.AsNoTracking().Include(a_ => a_.AccountCatches).FirstOrDefault(
-                a_ => a_.Name == CurrentAccount.Name
-            ).AccountCatches.Where(ac_ =>
-                ac_.Specie > -1
-            );
-
             AccountHistoryDataPoints = new ObservableCollection<AreaChartModel>();
             AccountHistoryDayDataPoints = new ObservableCollection<AreaChartModel>();
             AccountHistoryHourDataPoints = new ObservableCollection<AreaChartModel>();
@@ -66,7 +61,7 @@ namespace Polystone.Modules.Home.ViewModels
                 IEnumerable<AccountHistory> currentAccountHistories = accountHistories.Where(ah_ =>
                     ah_.CreationDate.Date == lastMonth.Date
                 );
-                if (currentAccountHistories.Count() > 0)
+                if (currentAccountHistories.Any())
                 {
                     AccountHistory lastAccountHistory = currentAccountHistories.OrderByDescending(ah_ => ah_.CreationDate).FirstOrDefault();
                     AccountHistoryDataPoints.Add(
@@ -109,7 +104,7 @@ namespace Polystone.Modules.Home.ViewModels
 
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
-
+            // Currently not necessary
         }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
@@ -119,7 +114,7 @@ namespace Polystone.Modules.Home.ViewModels
 
         public void OnNavigatedFrom(NavigationContext navigationContext)
         {
-
+            // Currently not necessary
         }
     }
 }

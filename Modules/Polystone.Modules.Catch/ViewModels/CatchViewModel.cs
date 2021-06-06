@@ -25,8 +25,8 @@ namespace Polystone.Modules.Catch.ViewModels
 
     public class CatchViewModel : BindableBase, INavigationAware
     {
-        private IPolystoneContextService _polystoneContextService;
-        private IPolystoneAccountService _polystoneAccountService;
+        private readonly IPolystoneContextService _polystoneContextService;
+        private readonly IPolystoneAccountService _polystoneAccountService;
 
         public Account CurrentAccount { get; set; }
 
@@ -61,7 +61,7 @@ namespace Polystone.Modules.Catch.ViewModels
 
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
-
+            // Currently not necessary
         }
 
         public bool IsNavigationTarget(NavigationContext navigationContext)
@@ -71,7 +71,7 @@ namespace Polystone.Modules.Catch.ViewModels
 
         public void OnNavigatedFrom(NavigationContext navigationContext)
         {
-
+            // Currently not necessary
         }
     }
 }
