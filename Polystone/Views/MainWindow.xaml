@@ -39,9 +39,5 @@
                 <prism:InvokeCommandAction Command="{Binding ItemClickedCommand}" TriggerParameterPath="Item"/>
             </i:EventTrigger>
         </i:Interaction.Triggers>
-        <syncfusion:SfNavigationDrawer.FooterItems>
-            <syncfusion:NavigationItem Header="LogOut" SelectionBackground="Transparent">
-            </syncfusion:NavigationItem>
-        </syncfusion:SfNavigationDrawer.FooterItems>
     </syncfusion:SfNavigationDrawer>
 </syncfusion:ChromelessWindow>
