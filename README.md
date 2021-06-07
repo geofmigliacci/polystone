@@ -1,4 +1,7 @@
+
+[![Version](https://img.shields.io/github/v/release/myerffoeg/polystone?sort=semver&style=for-the-badge)](https://github.com/myerffoeg/polystone/releases)
 [![License](https://img.shields.io/badge/GNU%20General%20Public%20License%203.0-lightgrey.svg?style=for-the-badge)](LICENSE.md)
+[![Total Downloads](https://img.shields.io/github/downloads/myerffoeg/polystone/total?style=for-the-badge)](https://github.com/myerffoeg/polystone/releases)
 
 [![SonarCloud](https://img.shields.io/sonar/quality_gate/myerffoeg_polystone?server=https%3A%2F%2Fsonarcloud.io&style=for-the-badge)](https://sonarcloud.io/dashboard?id=myerffoeg_polystone)
 
