@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
-    <PackageReference Include="Syncfusion.SfChart.WPF" Version="19.1.0.66" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="19.1.0.67" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Polystone.Core\Polystone.Core.csproj" />

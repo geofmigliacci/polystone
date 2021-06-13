@@ -103,7 +103,7 @@ namespace Polystone.ViewModels
         {
             if (string.IsNullOrEmpty(navigationPath))
             {
-                throw new ArgumentNullException("The navigationPath is null.");
+                throw new ArgumentNullException(nameof(navigationPath), "The navigationPath is null.");
             }
 
             _regionManager.RequestNavigate(RegionNames.ContentRegion, navigationPath);

@@ -85,7 +85,7 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "Syncfusion.Licensing/19.1.0.66": {
+      "Syncfusion.Licensing/19.1.0.67": {
         "type": "package",
         "compile": {
           "lib/net5.0/Syncfusion.Licensing.dll": {}
@@ -94,10 +94,10 @@
           "lib/net5.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfNavigationDrawer.WPF/19.1.0.66": {
+      "Syncfusion.SfNavigationDrawer.WPF/19.1.0.67": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.66"
+          "Syncfusion.Licensing": "19.1.0.67"
         },
         "compile": {
           "lib/net5.0-windows/Syncfusion.SfNavigationDrawer.WPF.dll": {}
@@ -370,10 +370,10 @@
         "readme.txt"
       ]
     },
-    "Syncfusion.Licensing/19.1.0.66": {
-      "sha512": "tEmJwSDnfSfa7UizXkTDsf/fwxChpjWT4fblxz4fNLQFr4hkhzR8GZ0LQvK91JwbHCiwJQgb37zM1i7uQgZEhg==",
+    "Syncfusion.Licensing/19.1.0.67": {
+      "sha512": "4cdYZvWDJvKLJR2C72KBFODhV/yYW71lW+w7QZL6/kMVlw/Cq71xJLWUU9jZGa2DeB+NA46g1o7gqPdy5Gan0g==",
       "type": "package",
-      "path": "syncfusion.licensing/19.1.0.66",
+      "path": "syncfusion.licensing/19.1.0.67",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -395,14 +395,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.19.1.0.66.nupkg.sha512",
+        "syncfusion.licensing.19.1.0.67.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.SfNavigationDrawer.WPF/19.1.0.66": {
-      "sha512": "9dJFgGGCpBfDg835eN4qc42GVfVJ1JrTy1yI8B0Rv9hp5Hb4bCwaHMAO4CcVtQwkJtQUn/sZi6PS9y/oxt8gaw==",
+    "Syncfusion.SfNavigationDrawer.WPF/19.1.0.67": {
+      "sha512": "9VJeUPHTOLk4/vDZZcdo/NyNwnmP/cLiS8ssNm6gcJSOwKaMn/P2VKyfLRjV/vtCkQ3vL+pOhWK506WbArAHUQ==",
       "type": "package",
-      "path": "syncfusion.sfnavigationdrawer.wpf/19.1.0.66",
+      "path": "syncfusion.sfnavigationdrawer.wpf/19.1.0.67",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -437,7 +437,7 @@
         "lib/netcoreapp3.1/Design/Syncfusion.SfNavigationDrawer.WPF.DesignTools.dll",
         "lib/netcoreapp3.1/Syncfusion.SfNavigationDrawer.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.SfNavigationDrawer.WPF.xml",
-        "syncfusion.sfnavigationdrawer.wpf.19.1.0.66.nupkg.sha512",
+        "syncfusion.sfnavigationdrawer.wpf.19.1.0.67.nupkg.sha512",
         "syncfusion.sfnavigationdrawer.wpf.nuspec",
         "tools/VisualStudioToolsManifest.xml"
       ]
@@ -976,7 +976,7 @@
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
       "Prism.DryIoc >= 8.1.97",
-      "Syncfusion.SfNavigationDrawer.WPF >= 19.1.0.66"
+      "Syncfusion.SfNavigationDrawer.WPF >= 19.1.0.67"
     ]
   },
   "packageFolders": {
@@ -1032,7 +1032,7 @@
           },
           "Syncfusion.SfNavigationDrawer.WPF": {
             "target": "Package",
-            "version": "[19.1.0.66, )"
+            "version": "[19.1.0.67, )"
           }
         },
         "imports": [
@@ -1053,7 +1053,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

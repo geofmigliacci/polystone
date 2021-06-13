@@ -18,7 +18,7 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgSyncfusion_SfNavigationDrawer_WPF Condition=" '$(PkgSyncfusion_SfNavigationDrawer_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.sfnavigationdrawer.wpf\19.1.0.66</PkgSyncfusion_SfNavigationDrawer_WPF>
+    <PkgSyncfusion_SfNavigationDrawer_WPF Condition=" '$(PkgSyncfusion_SfNavigationDrawer_WPF)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\syncfusion.sfnavigationdrawer.wpf\19.1.0.67</PkgSyncfusion_SfNavigationDrawer_WPF>
     <PkgMicrosoft_Xaml_Behaviors_Wpf Condition=" '$(PkgMicrosoft_Xaml_Behaviors_Wpf)' == '' ">C:\Users\Geoffrey MIGLIACCI\.nuget\packages\microsoft.xaml.behaviors.wpf\1.1.31</PkgMicrosoft_Xaml_Behaviors_Wpf>
   </PropertyGroup>
 </Project>

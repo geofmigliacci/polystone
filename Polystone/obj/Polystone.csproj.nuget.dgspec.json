@@ -62,15 +62,15 @@
             },
             "Syncfusion.SfChart.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.SfGrid.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.Tools.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             }
           },
           "imports": [
@@ -91,7 +91,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -156,15 +156,15 @@
             },
             "Syncfusion.SfChart.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.SfGrid.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.Tools.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             }
           },
           "imports": [
@@ -185,7 +185,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -247,15 +247,15 @@
             },
             "Syncfusion.SfChart.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.SfGrid.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.Tools.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             }
           },
           "imports": [
@@ -276,7 +276,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -338,7 +338,7 @@
             },
             "Syncfusion.SfChart.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             }
           },
           "imports": [
@@ -359,7 +359,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -421,11 +421,11 @@
             },
             "Syncfusion.SfGrid.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.SfMaps.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             }
           },
           "imports": [
@@ -446,7 +446,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -494,7 +494,7 @@
           "dependencies": {
             "Google.Protobuf": {
               "target": "Package",
-              "version": "[3.17.2, )"
+              "version": "[3.17.3, )"
             },
             "Grpc.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -504,17 +504,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[5.0.7, )"
             },
             "NetCoreServer": {
               "target": "Package",
@@ -540,7 +540,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -592,7 +592,7 @@
             },
             "Syncfusion.SfNavigationDrawer.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             }
           },
           "imports": [
@@ -613,7 +613,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -677,7 +677,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -750,7 +750,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -827,27 +827,27 @@
             },
             "Syncfusion.SfGrid.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.SfNavigationDrawer.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.SfSkinManager.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.Shared.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.Themes.Office2019Black.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             },
             "Syncfusion.Tools.WPF": {
               "target": "Package",
-              "version": "[19.1.0.66, )"
+              "version": "[19.1.0.67, )"
             }
           },
           "imports": [
@@ -868,7 +868,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }
