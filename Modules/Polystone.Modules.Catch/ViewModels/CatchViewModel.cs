@@ -15,7 +15,7 @@ namespace Polystone.Modules.Catch.ViewModels
     public class DataTableCatch : BindableBase
     {
         public string Specie { get; set; }
-        public DateTime CatchDate { get; set; }
+        public DateTime CreationTimeMs { get; set; }
         public int Cp { get; set; }
         public int Experience { get; set; }
         public int Stardust { get; set; }
@@ -44,13 +44,13 @@ namespace Polystone.Modules.Catch.ViewModels
             IEnumerable<AccountCatch> accountCatches = _polystoneContextService.GetPolystoneContext().Accounts.AsNoTracking().Include(a_ => a_.AccountCatches).FirstOrDefault(
                 a_ => a_.Name == CurrentAccount.Name
             ).AccountCatches.Where(c_ => 
-                c_.Specie > -1
+                c_.PokemonId > -1
             );
 
             DataTableCatches = new ObservableCollection<DataTableCatch>(accountCatches.Select(c_ => new DataTableCatch()
             {
-                Specie = ((HoloPokemonId)c_.Specie).ToString("g"),
-                CatchDate = c_.CatchDate.Value,
+                Specie = ((HoloPokemonId)c_.PokemonId).ToString("g"),
+                CreationTimeMs = c_.CreationTimeMs.Value,
                 Cp = c_.Cp,
                 Experience = c_.Experience,
                 Stardust = c_.Stardust,

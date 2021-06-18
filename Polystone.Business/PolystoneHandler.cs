@@ -121,9 +121,14 @@ namespace Polystone.Business
             foreach (AccountCatch pokemon in _polystoneContext.AccountCatches.Where(p_ => pokemonInventoryItemData.Select(pp_ => pp_.Key).Contains(p_.Id)))
             {
                 PokemonProto pokemonProto = pokemonInventoryItemData[pokemon.Id];
-                pokemon.Specie = (int)pokemonProto.PokemonId;
+                pokemon.PokemonId = (int)pokemonProto.PokemonId;
                 pokemon.Cp = pokemonProto.Cp;
-                pokemon.CatchDate = DateTimeOffset.FromUnixTimeMilliseconds(pokemonProto.CreationTimeMs).DateTime;
+                pokemon.IndividualAttack = pokemonProto.IndividualAttack;
+                pokemon.IndividualDefense = pokemonProto.IndividualDefense;
+                pokemon.IndividualStamina = pokemonProto.IndividualStamina;
+                pokemon.Move1 = pokemonProto.Move1;
+                pokemon.Move2 = pokemonProto.Move2;
+                pokemon.CreationTimeMs = DateTimeOffset.FromUnixTimeMilliseconds(pokemonProto.CreationTimeMs).DateTime;
                 _polystoneContext.AccountCatches.Update(pokemon);
             }
             _polystoneContext.SaveChanges();
