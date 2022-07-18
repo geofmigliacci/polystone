@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0-windows7.0": {
+    "net6.0-windows7.0": {
       "DryIoc.dll/4.7.7": {
         "type": "package",
         "dependencies": {
@@ -85,25 +85,25 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "Syncfusion.Licensing/19.1.0.67": {
+      "Syncfusion.Licensing/20.1.0.59": {
         "type": "package",
         "compile": {
-          "lib/net5.0/Syncfusion.Licensing.dll": {}
+          "lib/net6.0/Syncfusion.Licensing.dll": {}
         },
         "runtime": {
-          "lib/net5.0/Syncfusion.Licensing.dll": {}
+          "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.SfNavigationDrawer.WPF/19.1.0.67": {
+      "Syncfusion.SfNavigationDrawer.WPF/20.1.0.59": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.67"
+          "Syncfusion.Licensing": "20.1.0.59"
         },
         "compile": {
-          "lib/net5.0-windows/Syncfusion.SfNavigationDrawer.WPF.dll": {}
+          "lib/net5.0-windows7.0/Syncfusion.SfNavigationDrawer.WPF.dll": {}
         },
         "runtime": {
-          "lib/net5.0-windows/Syncfusion.SfNavigationDrawer.WPF.dll": {}
+          "lib/net5.0-windows7.0/Syncfusion.SfNavigationDrawer.WPF.dll": {}
         }
       },
       "System.IO/4.3.0": {
@@ -239,7 +239,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "McuO7dCvgGy+Lvgi3IbfHAYz/K7FSv7rLYHsUKs8uWqcvSEH1gLKDdOeFxF8ghu7WqmTC34HAECQdFB5iYtRew==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -254,11 +254,12 @@
       ]
     },
     "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "xFBMKg1wrvBKtzbAAnReuUc425wNJnSVGswKUcHR8X4J7RzNl+DwdkC2GW5je2KTu1hS2tFzjQ1zXiM2ATrHPA==",
+      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
       "type": "package",
       "path": "microsoft.netcore.targets/1.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -370,13 +371,14 @@
         "readme.txt"
       ]
     },
-    "Syncfusion.Licensing/19.1.0.67": {
-      "sha512": "4cdYZvWDJvKLJR2C72KBFODhV/yYW71lW+w7QZL6/kMVlw/Cq71xJLWUU9jZGa2DeB+NA46g1o7gqPdy5Gan0g==",
+    "Syncfusion.Licensing/20.1.0.59": {
+      "sha512": "W8SzUDmLaX8Ivs9f7FYbxJGNkbjrYxjVOB3+dzQtk8UfhPwH3K8zD2WhNE61WRpB9ecTfe9YAmk2KnfapbOdEw==",
       "type": "package",
-      "path": "syncfusion.licensing/19.1.0.67",
+      "path": "syncfusion.licensing/20.1.0.59",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "LICENSE.txt",
         "lib/MonoAndroid10.0/Syncfusion.Licensing.dll",
         "lib/MonoAndroid90/Syncfusion.Licensing.dll",
         "lib/Xamarin.Mac/Syncfusion.Licensing.dll",
@@ -388,6 +390,7 @@
         "lib/net451/Syncfusion.Licensing.dll",
         "lib/net46/Syncfusion.Licensing.dll",
         "lib/net5.0/Syncfusion.Licensing.dll",
+        "lib/net6.0/Syncfusion.Licensing.dll",
         "lib/netcoreapp3.1/Syncfusion.Licensing.dll",
         "lib/netstandard1.0/Syncfusion.Licensing.dll",
         "lib/netstandard1.2/Syncfusion.Licensing.dll",
@@ -395,18 +398,21 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.19.1.0.67.nupkg.sha512",
-        "syncfusion.licensing.nuspec"
+        "syncfusion.licensing.20.1.0.59.nupkg.sha512",
+        "syncfusion.licensing.nuspec",
+        "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.SfNavigationDrawer.WPF/19.1.0.67": {
-      "sha512": "9VJeUPHTOLk4/vDZZcdo/NyNwnmP/cLiS8ssNm6gcJSOwKaMn/P2VKyfLRjV/vtCkQ3vL+pOhWK506WbArAHUQ==",
+    "Syncfusion.SfNavigationDrawer.WPF/20.1.0.59": {
+      "sha512": "yGQpc94vbhXmSDoa0rou5zn66L+XnS63kY77kHfi0/iHOWWxCRAmMyvygtU1Uc3v4eCQ0nkfLAVo6614t8yr6A==",
       "type": "package",
-      "path": "syncfusion.sfnavigationdrawer.wpf/19.1.0.67",
+      "path": "syncfusion.sfnavigationdrawer.wpf/20.1.0.59",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
         "lib/net40/Design/Syncfusion.Design.Wpf.dll",
         "lib/net40/Design/Syncfusion.SfNavigationDrawer.WPF.DesignTools.dll",
         "lib/net40/Design/Syncfusion.SfNavigationDrawer.WPF.Expression.Design.dll",
@@ -431,23 +437,25 @@
         "lib/net46/Design/Syncfusion.SfNavigationDrawer.WPF.VisualStudio.Design.dll",
         "lib/net46/Syncfusion.SfNavigationDrawer.WPF.dll",
         "lib/net46/Syncfusion.SfNavigationDrawer.WPF.xml",
-        "lib/net5.0-windows/Design/Syncfusion.SfNavigationDrawer.WPF.DesignTools.dll",
-        "lib/net5.0-windows/Syncfusion.SfNavigationDrawer.WPF.dll",
-        "lib/net5.0-windows/Syncfusion.SfNavigationDrawer.WPF.xml",
+        "lib/net5.0-windows7.0/Design/Syncfusion.SfNavigationDrawer.WPF.DesignTools.dll",
+        "lib/net5.0-windows7.0/Syncfusion.SfNavigationDrawer.WPF.dll",
+        "lib/net5.0-windows7.0/Syncfusion.SfNavigationDrawer.WPF.xml",
         "lib/netcoreapp3.1/Design/Syncfusion.SfNavigationDrawer.WPF.DesignTools.dll",
         "lib/netcoreapp3.1/Syncfusion.SfNavigationDrawer.WPF.dll",
         "lib/netcoreapp3.1/Syncfusion.SfNavigationDrawer.WPF.xml",
-        "syncfusion.sfnavigationdrawer.wpf.19.1.0.67.nupkg.sha512",
+        "syncfusion.sfnavigationdrawer.wpf.20.1.0.59.nupkg.sha512",
         "syncfusion.sfnavigationdrawer.wpf.nuspec",
+        "syncfusion_logo.png",
         "tools/VisualStudioToolsManifest.xml"
       ]
     },
     "System.IO/4.3.0": {
-      "sha512": "oln8dtAbPgozC6/tmJR1snsYrgPjaFzmiSvbYcjKRwY3xRWQx3doLSFxJtt5bLPu7p+JEBJvIZqT14slcf6jsw==",
+      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
       "type": "package",
       "path": "system.io/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -604,11 +612,12 @@
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
-      "sha512": "y13+i0H2JmqC70v7ZlvaIQdw5Na/MvvJe4xhAv/QGE4FBeOTap1GVH6ozEkebKRLnI8d8L7lkCUuQZZsnAQJaA==",
+      "sha512": "59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
       "type": "package",
       "path": "system.reflection.emit.ilgeneration/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -648,11 +657,12 @@
       ]
     },
     "System.Reflection.Emit.Lightweight/4.3.0": {
-      "sha512": "dFVg5BadsC+9Uz97YNq5hmsIiu8TqWyznilaAmyWYzWrZHMak3SshFVgM+nnxMQffikht4eO20NBtmj4VMVqEw==",
+      "sha512": "oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
       "type": "package",
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -692,11 +702,12 @@
       ]
     },
     "System.Reflection.Primitives/4.3.0": {
-      "sha512": "eZp+GTKlDCD51prPhz8jK86v/Q21mJmhQh9D8F8uD72ib8PDuintUUGff/5HnTn7B1hIBtnJcKW3pwG6RjWyEQ==",
+      "sha512": "5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
       "type": "package",
       "path": "system.reflection.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -748,11 +759,12 @@
       ]
     },
     "System.Runtime/4.3.0": {
-      "sha512": "fCVR+qiZZP7SsL6SQB2GNaRP6g2PItDpK95SCJYmXRs3VmIHqaKxm3dMQXnJo3nmvcP9kyHDaf90m0wwdKTQTg==",
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
       "type": "package",
       "path": "system.runtime/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -839,11 +851,12 @@
       ]
     },
     "System.Text.Encoding/4.3.0": {
-      "sha512": "lWrMjQNgqaxezt1Hu2nF/oBq5a09yxkF1MiCCwAWS5KhG6TyFKzYqwGeggZTTAyWQ0GjD2WgGz9ibsR2oYTZAA==",
+      "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
       "type": "package",
       "path": "system.text.encoding/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -906,11 +919,12 @@
       ]
     },
     "System.Threading.Tasks/4.3.0": {
-      "sha512": "cFOGBAcGfjk7Vyrga26nyCfkfC+ou88q3KR3wtdac5YveDA5Q82LGTIucsAF/h7NuySUCUJsCLLLNnldTDzssw==",
+      "sha512": "LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
       "type": "package",
       "path": "system.threading.tasks/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -974,45 +988,42 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0-windows7.0": [
+    "net6.0-windows7.0": [
       "Prism.DryIoc >= 8.1.97",
-      "Syncfusion.SfNavigationDrawer.WPF >= 19.1.0.67"
+      "Syncfusion.SfNavigationDrawer.WPF >= 20.1.0.59"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Geoffrey MIGLIACCI\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\19.1.0.54\\ToolboxNuGetPackages": {}
+    "C:\\Users\\geoff\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj",
+      "projectUniqueName": "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Core\\Polystone.Core.csproj",
       "projectName": "Polystone.Core",
-      "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\Polystone.Core.csproj",
-      "packagesPath": "C:\\Users\\Geoffrey MIGLIACCI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Core\\obj\\",
+      "projectPath": "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Core\\Polystone.Core.csproj",
+      "packagesPath": "C:\\Users\\geoff\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\19.1.0.54\\ToolboxNuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Geoffrey MIGLIACCI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\geoff\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows7.0"
+        "net6.0-windows7.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0-windows7.0": {
-          "targetAlias": "net5.0-windows",
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
           "projectReferences": {}
         }
       },
@@ -1023,8 +1034,8 @@
       }
     },
     "frameworks": {
-      "net5.0-windows7.0": {
-        "targetAlias": "net5.0-windows",
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
         "dependencies": {
           "Prism.DryIoc": {
             "target": "Package",
@@ -1032,7 +1043,7 @@
           },
           "Syncfusion.SfNavigationDrawer.WPF": {
             "target": "Package",
-            "version": "[19.1.0.67, )"
+            "version": "[20.1.0.59, )"
           }
         },
         "imports": [
@@ -1053,7 +1064,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

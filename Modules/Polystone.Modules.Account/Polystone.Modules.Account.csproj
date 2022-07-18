@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <AssemblyName>Polystone.Modules.Account</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Prism.Wpf" Version="8.1.97" />
-    <PackageReference Include="Syncfusion.SfChart.WPF" Version="19.1.0.67" />
-    <PackageReference Include="Syncfusion.SfGrid.WPF" Version="19.1.0.67" />
-    <PackageReference Include="Syncfusion.Tools.WPF" Version="19.1.0.67" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="20.1.0.59" />
+    <PackageReference Include="Syncfusion.SfGrid.WPF" Version="20.1.0.59" />
+    <PackageReference Include="Syncfusion.Tools.WPF" Version="20.1.0.59" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Polystone.Core\Polystone.Core.csproj" />

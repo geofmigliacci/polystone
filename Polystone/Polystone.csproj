@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <AssemblyName>Polystone</AssemblyName>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>App.ico</ApplicationIcon>
@@ -19,12 +19,12 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
-    <PackageReference Include="Syncfusion.SfNavigationDrawer.WPF" Version="19.1.0.67" />
-    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="19.1.0.67" />
-    <PackageReference Include="Syncfusion.Shared.WPF" Version="19.1.0.67" />
-      <PackageReference Include="Syncfusion.SfGrid.WPF" Version="19.1.0.67" />
-      <PackageReference Include="Syncfusion.Themes.Office2019Black.WPF" Version="19.1.0.67" />
-      <PackageReference Include="Syncfusion.Tools.WPF" Version="19.1.0.67" />
+    <PackageReference Include="Syncfusion.SfNavigationDrawer.WPF" Version="20.1.0.59" />
+    <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="20.1.0.59" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="20.1.0.59" />
+      <PackageReference Include="Syncfusion.SfGrid.WPF" Version="20.1.0.59" />
+      <PackageReference Include="Syncfusion.Themes.Office2019Black.WPF" Version="20.1.0.59" />
+      <PackageReference Include="Syncfusion.Tools.WPF" Version="20.1.0.59" />
 </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Modules\Polystone.Modules.Account\Polystone.Modules.Account.csproj" />

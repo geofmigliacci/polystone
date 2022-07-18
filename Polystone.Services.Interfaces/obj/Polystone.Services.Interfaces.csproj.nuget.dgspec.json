@@ -1,38 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj": {}
+    "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Business\\Polystone.Business.csproj": {
+    "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Business\\Polystone.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Business\\Polystone.Business.csproj",
+        "projectUniqueName": "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Business\\Polystone.Business.csproj",
         "projectName": "Polystone.Business",
-        "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Business\\Polystone.Business.csproj",
-        "packagesPath": "C:\\Users\\Geoffrey MIGLIACCI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Business\\obj\\",
+        "projectPath": "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Business\\Polystone.Business.csproj",
+        "packagesPath": "C:\\Users\\geoff\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\19.1.0.54\\ToolboxNuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Geoffrey MIGLIACCI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\geoff\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -43,36 +41,36 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Google.Protobuf": {
               "target": "Package",
-              "version": "[3.17.3, )"
+              "version": "[3.21.1, )"
             },
             "Grpc.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.38.0, )"
+              "version": "[2.46.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[6.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[5.0.7, )"
+              "version": "[6.0.5, )"
             },
             "NetCoreServer": {
               "target": "Package",
-              "version": "[5.1.0, )"
+              "version": "[6.2.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -94,42 +92,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj": {
+    "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj",
         "projectName": "Polystone.Services.Interfaces",
-        "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj",
-        "packagesPath": "C:\\Users\\Geoffrey MIGLIACCI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Services.Interfaces\\obj\\",
+        "projectPath": "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Services.Interfaces\\Polystone.Services.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\geoff\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Services.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Syncfusion\\Essential Studio\\WPF\\19.1.0.54\\ToolboxNuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Geoffrey MIGLIACCI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\geoff\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Syncfusion Toolbox for WPF.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Business\\Polystone.Business.csproj": {
-                "projectPath": "C:\\Users\\Geoffrey MIGLIACCI\\source\\repos\\Polystone\\Polystone.Business\\Polystone.Business.csproj"
+              "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Business\\Polystone.Business.csproj": {
+                "projectPath": "C:\\Users\\geoff\\source\\repos\\polystone\\Polystone.Business\\Polystone.Business.csproj"
               }
             }
           }
@@ -141,8 +137,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -158,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
